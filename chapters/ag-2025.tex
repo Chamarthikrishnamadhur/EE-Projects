@@ -18,8 +18,7 @@
     \item[(D)] $\frac{25}{216}$
 \end{enumerate}
 \end{minipage}
-\bigskip\\\underline{Solution}\\\\
-     Step 1: Finding the probability mass function(PMF) of a single dice roll:\\\\
+\bigskip\\Solution:\\
      The sample space is S $\in \{1,2,3,4,5,6\}$ \\
      Let us define a variable $Y_1$ as follows: 
      \begin{align}
@@ -29,7 +28,7 @@
                 0&X_1\neq6
             \end{cases}
      \end{align}
-     Now, The PMF is defined as:\bigskip\\
+     Now, The PMF is defined as:\\
         \begin{align}
             P_{Y_1}(k)=
                 \begin{cases}
@@ -39,10 +38,8 @@
             \text{Let p,q be $\frac{1}{6}$ and $\frac{5}{6}$ respectively.}
         \end{align}\\
         
-    \noindent Step 2: Applying Z-Transform to find the required PMF for Y \\\\
+    %\noindent Step 2: Applying Z-Transform to find the required PMF for Y \\\\
     Let us define Y\textsubscript{2} and X\textsubscript{3} as the random variables for the 2\textsuperscript{nd} and 3\textsuperscript{rd} dice roll, respectively. Let Y denote the random variable for the combined triple dice roll.\medskip\\
-    
-    
     Now, we can write Y=Y\textsubscript{1}+Y\textsubscript{2}+Y\textsubscript{3}.\medskip\\
     Writing the Z-Transform for Y\textsubscript{1}\\
         \begin{align}
@@ -60,7 +57,7 @@
             P_Y\brak{k}&=^3C_k\,\,q^{3-k}\,\,p^k
     \end{align}
     The above situation is called as a binomial distribution.\\
-    \noindent Step 3: Using binomial distribution to get required probability
+    %\noindent Step 3: Using binomial distribution to get required probability
     We need the situation where p appears exactly once. So, we consider only the term where the power of p is 1.\\
     The required term is :  $^3C_1\,\,p\,\,q^2$.\\
     Substituting the values of p and q, we get:\\
@@ -69,7 +66,7 @@
         $=\frac{75}{216}$
     \end{center}
     Therefore, the required answer is $\frac{75}{216}$\medskip\\
-\large\underline{\textbf{Python Implementation }} \href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Probability(AGGATE2025).py}{Click here to go to the github code page}\medskip\\
+\large\underline{Python Implementation } \href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Probability(AGGATE2025).py}{Click here to go to the github code page}\medskip\\
 
 
 
@@ -83,7 +80,7 @@
     \item[(D)] $\frac{1}{3}$
 \end{enumerate}
 \end{minipage}
-    \underline{Solution}\medskip\\
+    {Solution}\medskip\\
     Let the roots whose sum is 1 be a and b.\\
     Then, by using the properties of coefficients of an equation, we write:\medskip\\
     \begin{align}
@@ -105,8 +102,6 @@
         3=p
     \end{align}
     Therefore, the value of p is 3.
-    
-    
     \bigskip
     
 
@@ -114,7 +109,7 @@
 
 
 \hfill\begin{minipage}{\linewidth}
-\item If the matrix $\myvec{ x & -3 \\ 2 & x-5 }$ is singular, sum of the values of $x$ is:\hfill(GATE AG 2025)   
+\item If the matrix $\myvec{ x & -3 \\ 2 & x-5 }$ is singular, sum of the values of $x$ is:     \hfill(GATE AG 2025)   
     \begin{enumerate}
     \item[(A)] 5
     \item [(B)]6
@@ -123,10 +118,9 @@
 \end{enumerate}
 \end{minipage}
 \bigskip\\
-\underline{Solution}\medskip\\
+Solution\medskip\\
 A matrix is said to be singular if its row echelon form has a row full of zeroes.\medskip\\
-Step 1: Finding row echelon form of the given matrix:\medskip\\
-
+Finding row echelon form of the given matrix:\medskip\\
 \begin{center}
       $\myvec{
         x&-3\\
@@ -149,7 +143,7 @@ Step 1: Finding row echelon form of the given matrix:\medskip\\
         0&\frac{\brak{-6-x^2+5x}}{2}
         }$\\  
 \end{center}
-\noindent Step 2: Making the bottom row to be full of zeroes:\medskip\\
+%\noindent Step 2: Making the bottom row to be full of zeroes:\medskip\\
 We need to equate $\frac{\brak{-6-x^2+5x}}{2}$ to zero.\\
 We get 
 \begin{align}
@@ -157,10 +151,9 @@ We get
     x^2-5x+6=0
 \end{align}
 So, the sum of values of x is 5.\medskip\\
-
 The following code converts a numerical matrix into its row echelon form.\\\\
 We can verify that the values of ($x=2,3$) give us a matrix with a row of zeroes\\\\
-\large \underline{\textbf{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/echelon.py}{Click here to go to the github code page}\\
+\large \underline{{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/echelon.py}{Click here to go to the github code page}\\
 
 
 
@@ -178,7 +171,7 @@ We can verify that the values of ($x=2,3$) give us a matrix with a row of zeroes
     \end{enumerate}
     \end{minipage}
     \bigskip\\
-\underline{Solution}\medskip\\
+Solution\medskip\\
 We do not know the laplace transforms of the options, so we hit-and-trial them to get the expression:\medskip\\
 Option (A):\\
 \begin{align}
@@ -246,14 +239,14 @@ The option that has the same laplace transform as the one in the question is Opt
     \end{enumerate}   
 \end{minipage}
 \bigskip\\
-\underline{Solution}\medskip\\
+{Solution}\medskip\\
 To find the median, we need to arrange the data in ascending or descending order.\\
 After arranging them in ascending order, the data is as follows:\medskip\\
 \{130,137,138,138,144,146,149,154,156,160\}\medskip\\
 The number of elements in the data set are 10.\medskip\\
 Since it is an even number, the median (M) is defined as the average of the middle 2 terms (in this case, average of 5\textsuperscript{th} and 6\textsuperscript{th} terms).\medskip\\
 Therefore, the median(M) is $\frac{144+146}{2} = 145.0$.\medskip\\
-\large\underline{\textbf{Python Implementation  }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Sorter.py}{Click here to go to the github code page}\medskip\\
+\large\underline{{Python Implementation  }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Sorter.py}{Click here to go to the github code page}\medskip\\
 
 
 
@@ -271,7 +264,7 @@ Therefore, the median(M) is $\frac{144+146}{2} = 145.0$.\medskip\\
     \end{enumerate}
 \end{minipage}
 
-\underline{Solution}\medskip\\
+{Solution}\medskip\\
     The given sequence is a geometric progression with initial term as 1 and common ratio as q and the number of terms are r+1.\\
     The sum of a geometrical progression with initial term a, common ratio r and number of terms n is given by:\\
     \begin{center}
@@ -285,7 +278,7 @@ Therefore, the median(M) is $\frac{144+146}{2} = 145.0$.\medskip\\
         
     \end{center}
 Therefore, the answer is option A.\medskip\\
-\large\underline{\textbf{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/gp.py}{Click here to go to the github code page}\\
+\large\underline{{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/gp.py}{Click here to go to the github code page}\\
 
   
 
@@ -304,7 +297,7 @@ Therefore, the answer is option A.\medskip\\
 \end{minipage}
 
     
-        \underline{Solution}\medskip\\
+        {Solution}\medskip\\
         We use the idea of taylor series expansion to solve the problem.\\
         
         \begin{center}
@@ -317,10 +310,10 @@ Therefore, the answer is option A.\medskip\\
         \end{center}
         
 
-\large\underline{\textbf{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Plotting\%20limit.py}{Click here to go to the github code page}\bigskip\\
+\large\underline{{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Plotting\%20limit.py}{Click here to go to the github code page}\bigskip\\
 
 
-  \large The output graph is shown below:\\
+ The output graph is shown below:\\
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{figs/limitplot.png}
@@ -346,9 +339,9 @@ Therefore, the answer is option A.\medskip\\
 \bigskip
 
 
-\underline{Solution}\\
+{Solution}\\
 We use euler's theorem for homogeneous functions.\bigskip\\
-Step 1: Proving the given function is homogeneous:\medskip\\
+%Step 1: Proving the given function is homogeneous:\medskip\\
 A function $f\brak{x,y}$ is said to be homogeneous and having degree n if $f(\alpha x, \alpha y)=\alpha^n f\brak{x,y}$\medskip\\
 now, let 
 \begin{align}
@@ -356,8 +349,8 @@ now, let
 g\brak{\alpha x,\alpha y}&=\alpha^4\brak{x^4+y^4+3x^2y^2}\\    
 \end{align}
 Therefore, u is a homogeneous function of degree 4.\medskip\\
-Step 2: Using Euler's theorem to get the answer\medskip\\
-\textbf{Euler's Theorem for homogeneous functions}\\
+%Step 2: Using Euler's theorem to get the answer\medskip\\
+{Euler's Theorem for homogeneous functions:}\\
 \quad It states that if a function $f\brak{x,y}$ is homogeneous, then the following condition is satisfied:\begin{align}
     x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}&=nf\\  
 \end{align}
@@ -374,22 +367,21 @@ Since they asked for its reciprocal, the answer is $\frac{1}{4u}$\\
 
 \hfill\begin{minipage}{\linewidth}
 \item The value of $y$ at $x=0.3$ and $y\brak{x=0}=0$ for the differential equation $\frac{dy}{dx}=3y+2e^x$ is \underline{\hspace{1cm}}. (Rounded off to 3 decimal places)\hfill(GATE AG 2025)
-  
 \end{minipage}
-\bigskip\\
-\underline{Solution}\\\\
-Step 1: Defining a function G(s) using laplace transform:\\ 
+
+{Solution}\\
+Let us define a function G(s) such that:\\ 
 \begin{align}
     G\brak{s}&=\mathcal{L}\{y\}\\
     sG\brak{s}&=\mathcal{L}\{y'\} \tag{By property of laplace transform and Given y\brak{0}=0}
 \end{align}
- Step 2: Applying the laplace transform on the diiferential equation:\\
+Applying the laplace transform:\\
  \begin{align}
      \mathcal{L}\{y'\}&=\mathcal{L}\{3y+2e^x\}\\
      \mathcal{L}\{y'\}&=3\mathcal{L}\{y\}\,+2\mathcal{L}\{e^x\}\tag{Using linearity of laplace transform}\\
      sG\brak{s}&=3G\brak{s}+2\mathcal{L}\{e^x\}
  \end{align}
-Step 3:Finding laplace transform of $e^x$:\\
+Finding laplace transform of $e^x$:\\
 \begin{align}
     \mathcal{L}\{e^x\}&=\int_{0}^{\infty}e^t\,e^{-st} dt\\
                       &=\int_{0}^{\infty}e^{\brak{1-s}\brak{t}} dt\\
@@ -397,27 +389,27 @@ Step 3:Finding laplace transform of $e^x$:\\
                       &=\frac{1}{1-s}(0-1)\tag{Assuming that s$>$1}\\
                       &=\frac{1}{s-1}
 \end{align}
-Step 4:Finding G(s):\\
+Now, we evaluate G(s)\\
 \begin{align}
     G\brak{s}\brak{s-3}&=\frac{2}{s-1}\\
     G\brak{s}&=\frac{2}{\brak{s-1}\brak{s-3}}\\
     \text{Using partial fractions:}\\
     G\brak{s}&=\left(\frac{1}{s-3}-\frac{1}{s-1}\right)
 \end{align}
-Step 5: Using inverse laplace transform to find y:
+Finding y using inverse laplace transform:
 \begin{align}
    \mathcal{L}\{y\}&=G\brak{s}\\
-                  y &=\mathcal{L^{-1}}\left\{\frac{1}{s-3}-\frac{1}{s-1}\right\}\\
-                  y &=\mathcal{L^{-1}}\left\{\frac{1}{s-3}\right\}-\mathcal{L^{-1}}\left\{\frac{1}{s-1}\right\}\tag{Using linearity of inverse laplace transform}\\
+                  y &=\mathcal{L}^{-1}\left\{\frac{1}{s-3}-\frac{1}{s-1}\right\}\\
+                  y &=\mathcal{L}^{-1}\left\{\frac{1}{s-3}\right\}-\mathcal{L}^{-1}\left\{\frac{1}{s-1}\right\}\tag{Using linearity of inverse laplace transform}\\
                   y&=e^{3x}-e^{x}\tag{From above, we say that$\mathcal{L}\{e^{ax}\}=\frac{1}{s-a}$ provided s$>$a.}\\
 \end{align}
-Step 6: Substituting condition to find value of y:\\
+finding y based on initial conditions:\\
 \begin{align}
     x&=0.3\tag{given}\\
     y&=e^{3\times0.3}-e^{0.3}\\
     y&=1.110
 \end{align}
-\large\underline{\textbf{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/diff_eq.py}{Click here to go to the github code page}\\
+\large\underline{{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/diff_eq.py}{Click here to go to the github code page}\\
 
 \end{enumerate}
 \end{document}
