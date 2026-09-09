@@ -31,9 +31,9 @@
         \end{align}\\
         
     %\noindent Step 2: Applying Z-Transform to find the required PMF for Y \\\\
-    Let us define Y\textsubscript{2} and X\textsubscript{3} as the random variables for the 2\textsuperscript{nd} and 3\textsuperscript{rd} dice roll, respectively. Let Y denote the random variable for the combined triple dice roll.\medskip\\
-    Now, we can write Y=Y\textsubscript{1}+Y\textsubscript{2}+Y\textsubscript{3}.\medskip\\
-    Writing the Z-Transform (Refer to \eqref{eq:ztransform}) for Y\\
+    Let us define $Y_2$ and $X_3$ as the random variables for the 2\textsuperscript{nd} and 3\textsuperscript{rd} dice roll, respectively. Let $Y$ denote the random variable for the combined triple dice roll.\medskip\\
+    Now, we can write $Y=Y_1+Y_2+Y_3$.\medskip\\
+    Writing the Z-Transform (Refer to \eqref{eq:ztransform}) for $Y$\\
         \begin{align}
                  M_{Y_1}(Z)&=\brak{P_{Y_1}(1)Z^{-1} +P_{Y_1}(0)Z^{-0}}\\
                            &=pZ^{-1}+q
@@ -57,8 +57,10 @@
         $=\frac{75}{216}$
     \end{center}
     Therefore, the required answer is $\frac{75}{216}$\medskip\\
-\large\underline{C Implementation } \href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Probability.c}{Click here to go to the github code page}\medskip\\
-
+\large\underline{C Implementation }:
+\begin{lstlisting}
+codes/Probability.c
+\end{lstlisting}
 
 
 
@@ -72,7 +74,9 @@
 \end{enumerate}
 \end{minipage}
     {Solution}\medskip\\
-    Let the roots whose sum is 1 be a and b.\\
+    \begin{enumerate}
+  	\item
+    Let the roots whose sum is 1 be $a$ and $b$.\\
     Then, by using the properties of coefficients of an equation, we write:\medskip\\
     \begin{align}
         -\brak{\frac{-3}{2}}&=a+b+c\\
@@ -92,11 +96,26 @@
         1+\frac{1}{2}(1)&=\frac{p}{2}\tag{From 3}\\
         3=p
     \end{align}
-    Therefore, the value of p is 3.
+    Therefore, the value of $p$ is 3.
     \bigskip
-    
+    \item
+    calculating the roots by newton-raphson method:\\
+    given cubic equation is :$2x^3-3x^2+3x-1$\\
+    Therefore, the update equation is:\\
+    $x_{n+1}=x_n+\frac{2x^3-3x^2+3x-1}{6x^2-6x+3}$
+    with an initial guess of 4,running this update equation 6 times gives us the real root, which is $\frac{1}{2}$
+    \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figs/rson.png}
+    \caption{The depiction of newton raphson method guessing the root}
+    \label{Plot of the function approaching the limit}
+\end{figure} \newpage 
 
-
+\end{enumerate}
+\large\underline{Python Implementation }:
+\begin{lstlisting}
+\codes\raph.py
+\end{lstlisting}
 
 
 \hfill\begin{minipage}{\linewidth}
@@ -116,23 +135,23 @@ Finding row echelon form of the given matrix:\medskip\\
       $\myvec{
         x&-3\\
         2&x-5 
-        }$\bigskip\medskip\\
+        }$\bigskip\\
         $\myvec{
         x&-3\\
         1&\frac{(x-5)}{2} 
-         }$\bigskip\medskip\\
+         }$\bigskip\\
         $\myvec{
-        x-[\brak{x}1]&-3-[\brak{x}\frac{x-5}{2}]\\
+        x-x\cdot1&\frac{-6-(x-5)}{2}\\
         1&\frac{\brak{x-5}}{2} 
-        }$\bigskip\medskip\\
+        }$\bigskip\\
         $\myvec{
         0&\frac{\brak{-6-x^2+5x}}{2}\\
         1&\frac{\brak{x-5}}{2} 
-        }$\bigskip\medskip\\
+        }$\bigskip\\
         $\myvec{
         1&\frac{\brak{x-5}}{2}\\
         0&\frac{\brak{-6-x^2+5x}}{2}
-        }$\\  
+        }$\bigskip\\  
 \end{center}
 %\noindent Step 2: Making the bottom row to be full of zeroes:\medskip\\
 We need to equate $\frac{\brak{-6-x^2+5x}}{2}$ to zero.\\
@@ -141,11 +160,13 @@ We get
     -6-x^2+5x=0\\
     x^2-5x+6=0
 \end{align}
-So, the sum of values of x is 5.\medskip\\
+So, the sum of values of $x$ is 5.\medskip\\
 The following code converts a numerical matrix into its row echelon form.\\\\
 We can verify that the values of ($x=2,3$) give us a matrix with a row of zeroes\\\\
-\large \underline{{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/echelon.py}{Click here to go to the github code page}\\
-
+\large \underline{{Python Implementation }}:
+\begin{lstlisting}
+codes/echelon.py
+\end{lstlisting}
 
 
 
@@ -163,28 +184,8 @@ We can verify that the values of ($x=2,3$) give us a matrix with a row of zeroes
     \end{minipage}
     \bigskip\\
 Solution\medskip\\
-We do not know the laplace transforms of the options, so we hit-and-trial them to get the expression:\medskip\\
-Option (A):\\
-\begin{align}
-    \mathcal{L}\{\cos(at)\}&=\frac{s}{s^2+a^2}\tag{From equation \eqref{eq:laplacecos}}
-\end{align}\bigskip\\
-\begin{center}
-    (continued in the next page)
-\end{center}
-Option (B):
-\begin{align}
-    \mathcal{L}\{\sin\brak{at}\}&=\frac{a}{s^2+a^2}\tag{From equation \eqref{eq:laplacesin}}
-\end{align}\bigskip\\\\\\
-Option (C):\\
-\begin{align}
-    \mathcal{L}\{\sinh\brak{at}\}&=\frac{a}{s^2-a^2}\tag{From equation \eqref{eq:laplacesinh}}
-\end{align}
-Option (D):\\
-\begin{align}
-    \mathcal{L}\{\cosh\brak{at}\}&=\frac{s}{s^2-a^2}\tag{From equation \eqref{eq:laplacecosh}}
-\end{align}
-The option that has the same laplace transform as the one in the question is Option(A). So, it is the correct answer.\bigskip\\
-
+From the transforms in \eqref{eq:laplacecommon}, we see that the given lapalace transform is that of option(A).\bigskip\\
+%no options
 
 
 
@@ -207,10 +208,11 @@ To find the median, we need to arrange the data in ascending or descending order
 After arranging them in ascending order, the data is as follows:\medskip\\
 \{130,137,138,138,144,146,149,154,156,160\}\medskip\\
 The number of elements in the data set are 10.\medskip\\
-Since it is an even number, the median (M) is defined as the average of the middle 2 terms (in this case, average of 5\textsuperscript{th} and 6\textsuperscript{th} terms).\medskip\\
-Therefore, the median(M) is $\frac{144+146}{2} = 145.0$.\medskip\\
-\large\underline{{Python Implementation  }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Sorter.py}{Click here to go to the github code page}\medskip\\
-
+Since it is an even number, the median ($M$) is defined as the average of the middle 2 terms (in this case, average of $5^{th}$ and $6^{th}$ terms).\medskip\\
+Therefore, the median($M$) is $\frac{144+146}{2} = 145.0$.\medskip\\\large\underline{{Python Implementation  }}
+\begin{lstlisting}
+codes/Sorter.py
+\end{lstlisting}
 
 
 
@@ -228,7 +230,7 @@ Therefore, the median(M) is $\frac{144+146}{2} = 145.0$.\medskip\\
 \end{minipage}
 
 {Solution}\medskip\\
-    The given sequence is a geometric progression with initial term as 1 and common ratio as q and the number of terms are r+1.\\
+    The given sequence is a geometric progression with initial term as 1 and common ratio as $q$ and the number of terms are $r+1$.(The series converges only if $q<1$)\\
     applying formula \eqref{eq:sumofgp}, we get :
     \begin{center}
         $1\,\frac{q^{r+1}-1}{q-1}$\medskip\\
@@ -237,8 +239,10 @@ Therefore, the median(M) is $\frac{144+146}{2} = 145.0$.\medskip\\
         
     \end{center}
 Therefore, the answer is option A.\medskip\\
-\large\underline{{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/gp.py}{Click here to go to the github code page}\\
-
+\large\underline{{Python Implementation }}:
+\begin{lstlisting}
+codes/gp.py
+\end{lstlisting}
   
 
 
@@ -257,21 +261,23 @@ Therefore, the answer is option A.\medskip\\
 
     
         {Solution}\medskip\\
-        We use the idea of taylor series expansion to solve the problem.\\
+        We use the idea of taylor series expansion (converges if $x<1$) to solve the problem.\\
         
         \begin{center}
         $\frac{x\brak{\cos\brak{x}}-\sin\brak{x}}{x^2\sin\brak{x}}$\\
         $\frac{x(1-\frac{x^2}{2!} .....)-(x-\frac{x^3}{3!}.....)}{x^2(x-\frac{x^3}{3!}.....)}$\\
         \hfill{From \eqref{eq:expansions}}\\
-        When x approaches zero, we can ignore the higher power terms.\\
+        When $x$ approaches zero, we can ignore the higher power terms.\\
         $\frac{(x-\frac{x^3}{2})-(x-\frac{x^3}{6})}{x^3(1-\frac{x^2}{6})}$\\
         $\frac{\frac{-1}{3}}{1-\frac{x^2}{6}}$\\
-        Substituting x as zero gives us the limit as $\frac{-1}{3}$.
+        Substituting $x$ as zero gives us the limit as $\frac{-1}{3}$.
         \end{center}
         
 
-\large\underline{{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/Plotting\%20limit.py}{Click here to go to the github code page}\bigskip\\
-
+\large\underline{{Python Implementation }}:
+\begin{lstlisting}
+codes/Plotting\%20limit.py
+\end{lstlisting}
 
  The output graph is shown below:\\
 \begin{figure}[htbp]
@@ -312,7 +318,7 @@ Therefore, u is a homogeneous function of degree 4.\medskip\\
 %Step 2: Using Euler's theorem to get the answer\medskip\\
 Since we know that the given equation is homogeneous and of degree 4, we can apply this theorem.\\
 \begin{align}\
-    x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}&=4u
+    x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}&=4u \tag{Refer equation \eqref{eq:eulerhomo}}
 \end{align}
 Since they asked for its reciprocal, the answer is $\frac{1}{4u}$\\
 
@@ -326,6 +332,8 @@ Since they asked for its reciprocal, the answer is $\frac{1}{4u}$\\
 \end{minipage}
 
 {Solution}\\
+\begin{enumerate}
+\item
 Let us define a function G(s) such that:\\ 
 \begin{align}
     G\brak{s}&=\mathcal{L}\{y\}\\
@@ -358,7 +366,21 @@ finding y based on initial conditions:\\
     y&=e^{3\times0.3}-e^{0.3}\\
     y&=1.110
 \end{align}
-\large\underline{{Python Implementation }}\href{https://github.com/Chamarthikrishnamadhur/EE-Projects/blob/main/codes/diff_eq.py}{Click here to go to the github code page}\\
-
+\item
+we use forward euler method to find the graph of the given function:\\
+The update function of forward euler becomes:\\
+$y_{n+1}=y_{n}+h(3y_n+2e^x)$
+using it, the following graph is obtained: 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figs/Euler.png}
+    \caption{The plot depicting the divergence of forward euler from original at large values}
+    \label{Plot of the function approaching the limit}
+\end{figure} \newpage 
+\end{enumerate}
+\large\underline{{Python Implementation }}:
+\begin{lstlisting}
+codes/diff_eq.py
+\end{lstlisting}
 \end{enumerate}
 %\end{document}
