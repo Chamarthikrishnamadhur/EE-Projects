@@ -5,7 +5,7 @@ $M_{Y_1}\brak{Z}=E\brak{Z^{-Y_1}}=\sum\, P_{Y_1}\brak{k}\,Z^{-k}$\\
 If y1,y2..yn are independent events:\\
 $M_Y\brak{Z}=M_{Y_1}\brak{Z}\,\, M_{Y_2}\brak{Z}\,.......\,M_{Y_n}\brak{Z}$\label{eq:ztransformindep}\\
 \item
-Laplace transforms of some common functions:\\
+Laplace transforms of some common functions:\label{eq:laplacecommon}\\
 
 \item
 \begin{align}
@@ -130,8 +130,14 @@ Proof:
                       &=\frac{1}{a-s}(0-1)\tag{Assuming that s$>$1}\\
                       &=\frac{1}{s-a}
 \end{align}
-
-
+\item
+Euler's forward difference method: The output of f(x) at $x=x_0$ is $y_0$, then,\\
+$y_1=y_0+hf'\brak{x_0,y_0}\label{eq:fwdeuler}$\\
+where $y_1$ is the value of the function at $x=x_0+h$\\
+\item 
+Newton Raphson method:The improved guess of the root of $f(x)$ is given by:\\
+$x_1=x_0-\frac{f(x_0)}{f'(x_0)}\label{eq:raph}$\\ 
+Where $x_0$ is the old guess and $x_1$ is the improved guess.
 
 
 
