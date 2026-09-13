@@ -31,9 +31,9 @@
         \end{align}\\
         
     %\noindent Step 2: Applying Z-Transform to find the required PMF for Y \\\\
-    Let us define $Y_2$ and $X_3$ as the random variables for the 2\textsuperscript{nd} and 3\textsuperscript{rd} dice roll, respectively. Let $Y$ denote the random variable for the combined triple dice roll.\medskip\\
-    Now, we can write $Y=Y_1+Y_2+Y_3$.\medskip\\
-    Writing the Z-Transform (Refer to \eqref{eq:ztransform}) for $Y$\\
+    Let us define $Y_2$ and $X_3$ as the random variables for the 2\textsuperscript{nd} and 3\textsuperscript{rd} dice roll, respectively. Let $Y$ denote the random variable for the combined triple dice roll.\\
+    Now, we can write $Y=Y_1+Y_2+Y_3$.\\
+    Writing the Z-Transform (Refer to \eqref{eq:ztransform}) for $Y$
         \begin{align}
                  M_{Y_1}(Z)&=\brak{P_{Y_1}(1)Z^{-1} +P_{Y_1}(0)Z^{-0}}\\
                            &=pZ^{-1}+q
@@ -52,15 +52,17 @@
     We need the situation where p appears exactly once. So, we consider only the term where the power of p is 1.\\
     The required term is :  $^3C_1\,\,p\,\,q^2$.\\
     Substituting the values of p and q, we get:\\
-    \begin{center}
-        $^3C_1\,\frac{1}{6}\,\,\brak{\frac{5}{6}}^2$\medskip\\
-        $=\frac{75}{216}$
-    \end{center}
-    Therefore, the required answer is $\frac{75}{216}$\medskip\\
-\large\underline{C Implementation }:
+    \begin{align}
+        ^3C_1\,\frac{1}{6}\,\,\brak{\frac{5}{6}}^2
+        =\frac{75}{216}
+    \end{align}
+    Therefore, the required answer is $\frac{75}{216}$\\
+The following code simulates the result :
 \begin{lstlisting}
 codes/Probability.c
 \end{lstlisting}
+
+
 
 
 
@@ -73,7 +75,7 @@ codes/Probability.c
     \item[(D)] $\frac{1}{3}$
 \end{enumerate}
 \end{minipage}
-    {Solution}\medskip\\
+    {Solution}
     \begin{enumerate}
   	\item
     Let the roots whose sum is 1 be $a$ and $b$.\\
@@ -97,25 +99,32 @@ codes/Probability.c
         3=p
     \end{align}
     Therefore, the value of $p$ is 3.
-    \bigskip
+    \\
     \item
     calculating the roots by newton-raphson method(Ref\eqref{eq:raph})\\
     given cubic equation is :$2x^3-3x^2+3x-1$\\
-    Therefore, the update equation is:\\\\
-    $x_{n+1}=x_n+\frac{2x^3-3x^2+3x-1}{6x^2-6x+3}$\\\\
-    With an initial guess of 4, running this update equation 6 times gives us the real root, which is $\frac{1}{2}$
+    Therefore, the difference equation is:
+    \begin{align}
+    x_{n+1}=x_n+\frac{2x^3-3x^2+3x-1}{6x^2-6x+3}   
+    \end{align}
+
+    With an initial guess of 4, running this difference equation 6 times gives us the real root, which is $\frac{1}{2}$
     \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{figs/rson.png}
     \caption{The depiction of newton raphson method guessing the root}
-    \label{Plot of the function approaching the limit}
-\end{figure} \newpage 
+    \label{Newtonraphsonfig}
+\end{figure}
 
 \end{enumerate}
-\large\underline{Python Implementation }:
+The following code verifies the result:
 \begin{lstlisting}
 codes/raph.py
 \end{lstlisting}
+
+
+
+
 
 
 \hfill\begin{minipage}{\linewidth}
@@ -129,30 +138,47 @@ codes/raph.py
 \end{minipage}
 \bigskip\\
 Solution\medskip\\
-A matrix is said to be singular if its row echelon form has a row full of zeroes.\medskip\\
-Finding row echelon form of the given matrix:\medskip\\
-\begin{center}
-      $\myvec{
-        x&-3\\
-        2&x-5 
-        }$\bigskip\\
-        $\myvec{
+A matrix is said to be singular if its row echelon form has a row full of zeroes.\\
+Finding row echelon form of the given matrix:\\
+\begin{align*}
+    \myvec{
+        x& -3 \\
+        2& x-5
+    }
+    \xleftrightarrow{R_2 \to \frac{R_2}{2}}
+    \myvec{
         x&-3\\
         1&\frac{(x-5)}{2} 
-         }$\bigskip\\
-        $\myvec{
+         } 
+    \xleftrightarrow{R_1 \to R_1 - xR_2}\\
+    \myvec{
         x-x\cdot1&\frac{-6-(x-5)}{2}\\
         1&\frac{\brak{x-5}}{2} 
-        }$\bigskip\\
-        $\myvec{
-        0&\frac{\brak{-6-x^2+5x}}{2}\\
-        1&\frac{\brak{x-5}}{2} 
-        }$\bigskip\\
-        $\myvec{
+        }
+	\xleftrightarrow{R_2 \to R_1  R_2 \to R_1}
+	\myvec{
         1&\frac{\brak{x-5}}{2}\\
         0&\frac{\brak{-6-x^2+5x}}{2}
-        }$\bigskip\\  
-\end{center}
+        }    
+\end{align*}
+%\begin{center}
+ %     $\myvec{
+  %      x&-3\\
+  %      2&x-5 
+  %     }$\bigskip\\
+  %      $\myvec{
+  %      x-x\cdot1&\frac{-6-(x-5)}{2}\\
+  %      1&\frac{\brak{x-5}}{2} 
+  %     }$\bigskip\\
+  %      $\myvec{
+  %      0&\frac{\brak{-6-x^2+5x}}{2}\\
+  %      1&\frac{\brak{x-5}}{2} 
+  %      }$\bigskip\\
+  %      $\myvec{
+  %      1&\frac{\brak{x-5}}{2}\\
+  %      0&\frac{\brak{-6-x^2+5x}}{2}
+  %      }$\bigskip\\  
+%\end{center}
 %\noindent Step 2: Making the bottom row to be full of zeroes:\medskip\\
 We need to equate $\frac{\brak{-6-x^2+5x}}{2}$ to zero.\\
 We get 
@@ -160,10 +186,10 @@ We get
     -6-x^2+5x=0\\
     x^2-5x+6=0
 \end{align}
-So, the sum of values of $x$ is 5.\medskip\\
-The following code converts a numerical matrix into its row echelon form.\\\\
-We can verify that the values of ($x=2,3$) give us a matrix with a row of zeroes\\\\
-\large \underline{{Python Implementation }}:
+So, the sum of values of $x$ is 5.\\
+The following code converts a numerical matrix into its row echelon form.So,
+we can verify that the values of ($x=2,3$) give us a matrix with a row of zeroes\\
+The following code verifies the result:
 \begin{lstlisting}
 codes/echelon.py
 \end{lstlisting}
@@ -209,9 +235,11 @@ After arranging them in ascending order, the data is as follows:\medskip\\
 \{130,137,138,138,144,146,149,154,156,160\}\medskip\\
 The number of elements in the data set are 10.\medskip\\
 Since it is an even number, the median ($M$) is defined as the average of the middle 2 terms (in this case, average of $5^{th}$ and $6^{th}$ terms).\medskip\\
-Therefore, the median($M$) is $\frac{144+146}{2} = 145.0$.\medskip\\\large\underline{{Python Implementation  }}
+Therefore, the median($M$) is $\frac{144+146}{2} = 145.0$.\\
+The following codes verify the result:
 \begin{lstlisting}
 codes/Sorter.py
+codes/Quicksort.c
 \end{lstlisting}
 
 
@@ -232,14 +260,13 @@ codes/Sorter.py
 {Solution}\medskip\\
     The given sequence is a geometric progression with initial term as 1 and common ratio as $q$ and the number of terms are $r+1$.(The series converges only if $q<1$)\\
     applying formula \eqref{eq:sumofgp}, we get :
-    \begin{center}
-        $1\,\frac{q^{r+1}-1}{q-1}$\medskip\\
-        $\frac{1-q^{r+1}}{1-q}$\medskip\\
-        $\frac{1}{1-q}-\frac{q^{r+1}}{1-q}$
-        
-    \end{center}
+    \begin{align}
+        1\,\frac{q^{r+1}-1}{q-1}\\
+        \frac{1-q^{r+1}}{1-q}\\
+        \frac{1}{1-q}-\frac{q^{r+1}}{1-q}        
+    \end{align}
 Therefore, the answer is option A.\medskip\\
-\large\underline{{Python Implementation }}:
+The following code verifies the result:
 \begin{lstlisting}
 codes/gp.py
 \end{lstlisting}
@@ -263,20 +290,23 @@ codes/gp.py
         {Solution}\medskip\\
         We use the idea of taylor series expansion (converges if $x<1$) to solve the problem.\\
         
-        \begin{center}
-        $\frac{x\brak{\cos\brak{x}}-\sin\brak{x}}{x^2\sin\brak{x}}$\\
-        $\frac{x(1-\frac{x^2}{2!} .....)-(x-\frac{x^3}{3!}.....)}{x^2(x-\frac{x^3}{3!}.....)}$\\
-        \hfill{From \eqref{eq:expansions}}\\
-        When $x$ approaches zero, we can ignore the higher power terms.\\
-        $\frac{(x-\frac{x^3}{2})-(x-\frac{x^3}{6})}{x^3(1-\frac{x^2}{6})}$\\
-        $\frac{\frac{-1}{3}}{1-\frac{x^2}{6}}$\\
-        Substituting $x$ as zero gives us the limit as $\frac{-1}{3}$.
-        \end{center}
+       \begin{align}
+        &\frac{x\brak{\cos\brak{x}}-\sin\brak{x}}{x^2\sin\brak{x}}\\
+        &\frac{x(1-\frac{x^2}{2!} .....)-(x-\frac{x^3}{3!}.....)}{x^2(x-\frac{x^3}{3!}.....)}
+        \tag{From \eqref{eq:expansions}}
+        \end{align}
+        {When $x$ approaches zero, we can ignore the higher power terms.}\\
+        \begin{align}
+    		&\frac{(x-\frac{x^3}{2})-(x-\frac{x^3}{6})}{x^3(1-\frac{x^2}{6})}\\
+        &\frac{\frac{-1}{3}}{1-\frac{x^2}{6}}
+       \end{align}
+       {Substituting $x$ as zero gives us the limit as $\frac{-1}{3}$.}
+        
         
 
-\large\underline{{Python Implementation }}:
+The following code simulates the result:
 \begin{lstlisting}
-codes/Plotting\%20limit.py
+codes/Plottinglimit.py
 \end{lstlisting}
 
  The output graph is shown below:\\
@@ -285,7 +315,7 @@ codes/Plotting\%20limit.py
     \includegraphics[width=0.7\textwidth]{figs/limitplot.png}
     \caption{The plot depicting the approaching of the limit to $\frac{-1}{3}$}
     \label{Plot of the function approaching the limit}
-\end{figure} \newpage 
+\end{figure}
 
 
 
@@ -312,7 +342,7 @@ A function $f\brak{x,y}$ is said to be homogeneous and having degree n if $f(\al
 now, let 
 \begin{align}
     u=g\brak{x,y}&=x^4+y^4+3x^2y^2\\
-g\brak{\alpha x,\alpha y}&=\alpha^4\brak{x^4+y^4+3x^2y^2}\\    
+g\brak{\alpha x,\alpha y}&=\alpha^4\brak{x^4+y^4+3x^2y^2}  
 \end{align}
 Therefore, u is a homogeneous function of degree 4.\medskip\\
 %Step 2: Using Euler's theorem to get the answer\medskip\\
@@ -337,7 +367,7 @@ Since they asked for its reciprocal, the answer is $\frac{1}{4u}$\\
 Let us define a function G(s) such that:\\ 
 \begin{align}
     G\brak{s}&=\mathcal{L}\{y\}\\
-    sG\brak{s}&=\mathcal{L}\{y'\} \tag{By property of laplace transform and Given y\brak{0}=0}
+    sG\brak{s}&=\mathcal{L}\{y'\} \tag{Refer \eqref{eq:laplace1d}}
 \end{align}
 Applying the laplace transform:\\
  \begin{align}
@@ -368,19 +398,19 @@ finding y based on initial conditions:\\
 \end{align}
 \item
 we use forward euler method (Refer to \eqref{eq:fwdeuler})to find the graph of the given function:\\
-The update function of forward euler becomes:\\
+The difference function of forward euler becomes:\\
 $y_{n+1}=y_{n}+h(3y_n+2e^x)$
 using it, the following graph is obtained: 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.7\textwidth]{figs/Euler.png}
+    \includegraphics[width=0.5\textwidth]{figs/Euler.png}
     \caption{The plot depicting the divergence of forward euler from original at large values}
-    \label{Plot of the function approaching the limit}
-\end{figure} \newpage 
+    \label{Forwardeuler}
+\end{figure}
 \end{enumerate}
-\large\underline{{Python Implementation }}:
+The following code simulates the result:
 \begin{lstlisting}
-codes/diff_eq.py
+codes/diffeq.py
 \end{lstlisting}
 \end{enumerate}
 %\end{document}

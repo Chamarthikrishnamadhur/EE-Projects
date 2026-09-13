@@ -11,10 +11,11 @@ y = f(x)
 
 plt.plot(x, y, color='blue', linestyle='-', linewidth=2, label='f(x) = Given Function')
 plt.axhline(y=-1/3, color='red', linestyle='-', linewidth=2, label='f(x) = -0.33333')
-plt.title('Func limit is -0.33333')
-plt.xlabel('X Axis')
-plt.ylabel('Y Axis')
+
+plt.xlabel('x')
+plt.ylabel('f(x)')
 plt.grid(True, alpha=0.5)
+plt.tight_layout()
 plt.legend()
 
  
