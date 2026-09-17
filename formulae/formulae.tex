@@ -17,7 +17,7 @@ Laplace transforms of some common functions:\label{eq:laplacecommon}
 \cos\brak{at}\system{L}\frac{s}{s^2+a^2}\label{eq:laplacecos}
 \end{align}
 
-\proof
+\solution
 \begin{align}
     \cos(at)&\system{L}\int_{0}^{\infty}\cos\brak{at}\,e^{-st}\,dt=I\\
                           I&=\int_{0}^{\infty}\frac{d\brak{\sin\brak{at}}}{a}\,e^{-st}\\
@@ -34,7 +34,7 @@ Laplace transforms of some common functions:\label{eq:laplacecommon}
 \begin{align}
 \sin\brak{at}&\system{L}\frac{a}{s^2+a^2}\label{eq:laplacesin}
 \end{align}
-\proof
+\solution
 \begin{align}
     \sin\brak{at}&\system{L}\int_{0}^{\infty}\sin\brak{at}\,e^{-st}\,dt=I\\
                           I&=\int_{0}^{\infty}\frac{d\brak{-\cos\brak{at}}}{a}\,e^{-st}\\
@@ -51,11 +51,14 @@ Laplace transforms of some common functions:\label{eq:laplacecommon}
 \begin{align}
 \sinh\brak{at}\system{L}\frac{a}{s^2-a^2}\label{eq:laplacesinh}
 \end{align}
-\proof
+\solution
 \begin{align}
-\sinh\brak{at}&\system{L}\int_0^\infty \frac{e^{at}-e^{-at}}{2}\,e^{-st} dt\\
+\sinh\brak{at}&\system{L}\int_0^\infty \frac{e^{at}-e^{-at}}{2}\,e^{-st} dt=I\\
                             &=\frac{1}{2}\int_0^\infty e^{\brak{a-s}\brak{t}} dt -\frac{1}{2}\int_0^\infty e^{\brak{-a-s}\brak{t}}dt\\
-                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty-\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty\tag{assume $re(s)>re(a)$ for integral to be finite}\\
+                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty-\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty
+                            \end{align}
+                            Assuming $\operatorname{re}(s)>\operatorname{re}(a)$ for integral to be finite
+                            \begin{align}
                             &=\frac{1}{2}\brak{\frac{1}{s-a}-\frac{1}{s+a}}\\
                             &=\frac{1}{2}\brak{\frac{2a}{s^2-a^2}}\\
                            I&=\frac{a}{s^2-a^2}
@@ -64,11 +67,14 @@ Laplace transforms of some common functions:\label{eq:laplacecommon}
 \begin{align}
 \cosh\brak{at}\system{L}\frac{s}{s^2-a^2}\label{eq:laplacecosh}
 \end{align}
-\proof
+\solution
 \begin{align}
-\cosh\brak{at}&\system{L}\int_0^\infty \frac{e^{at}+e^{-at}}{2}\,e^{-st} dt\\
+\cosh\brak{at}&\system{L}\int_0^\infty \frac{e^{at}+e^{-at}}{2}\,e^{-st} dt=I\\
                             &=\frac{1}{2}\int_0^\infty e^{\brak{a-s}\brak{t}} dt +\frac{1}{2}\int_0^\infty e^{\brak{-a-s}\brak{t}}dt\\
-                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty+\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty\tag{assume $re(s)>re(a)$ for integral to be finite}\\
+                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty+\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty
+                            \end{align}
+                            Assume $\operatorname{re}(s)>\operatorname{re}(a)$ for integral to be finite
+                            \begin{align}
                             &=\frac{1}{2}\brak{\frac{1}{s-a}+\frac{1}{s+a}}\\
                             &=\frac{1}{2}\brak{\frac{2s}{s^2-a^2}}\\
                            I&=\frac{s}{s^2-a^2}
@@ -95,7 +101,7 @@ It states that if a function $f(x,y)$is homogeneous of degree n,then the followi
 \begin{equation}
 	f'\brak{x}\system{L}sG\brak{s}-f\brak{0}\label{eq:laplace1d}
 \end{equation}
-\proof
+\solution
 Let G(s) be the Laplace transform of y=f(x):\\
 \begin{align}
     y\system{L}G\brak{s}
@@ -112,13 +118,13 @@ integrating by parts,
 			 sG\brak{s}&=f\brak{0}+\mathcal{L}\{f'(x)\}\\
 			 f'\brak{x}&\system{L}sG\brak{s}-f\brak{0}			 		
 \end{align}
-\item
-The Laplace transform is a linear function\label{eq:linearlaplace}
+%\item
+%The Laplace transform is a linear function\label{eq:linearlaplace}
 %\begin{align}
 %af\brak{x}+bg\brak{x}\}=a\mathcal{L}\{f\brak{x}\}+b\mathcal{L}\{g\brak{x}\}\label{eq:linearlaplace}
 %\end{align} 
-\item 
-The inverse Laplace transform is a linear function\label{eq:linearinverselaplace}
+%\item 
+%The inverse Laplace transform is a linear function\label{eq:linearinverselaplace}
 %\begin{align}
 %\mathcal{L}^{-1}\{af\brak{x}+bg\brak{x}\}=a\mathcal{L}\{f\brak{x}\}+b\mathcal{L}\{g\brak{x}\}\label{eq:linearinverselaplace}
 %\end{align} 
@@ -127,21 +133,34 @@ Laplace transform of $e^{ax}$
 \begin{align}
 	e^{ax}&\system{L}\frac{1}{s-a}\label{eq:laplacee^ax}
 \end{align}
-\proof
+\solution
 \begin{align}	
     e^{ax}&\system{L}\int_{0}^{\infty}e^{at}\,e^{-st} dt\\
                       &=\int_{0}^{\infty}e^{\brak{a-s}\brak{t}} dt\\
                       &=\frac{1}{a-s}\,\,(e^{\brak{a-s}\brak{t}}\big|_{0}^{\infty})\\
-                      &=\frac{1}{a-s}(0-1)\tag{Assuming that $re(s)>re(a)$}\\
+                      &=\frac{1}{a-s}(0-1)
+                      \end{align}
+                      Assuming that $\operatorname{re}(s)>\operatorname{re}(a)$
+                      \begin{align}
                       &=\frac{1}{s-a}
 \end{align}
+
 \item
-Euler's forward difference method: The output of f(x) at $x=x_0$ is $y_0$, then,\\
-$y_1=y_0+hf'\brak{x_0,y_0}\label{eq:fwdeuler}$\\
-where $y_1$ is the value of the function at $x=x_0+h$\\
+
+Euler's forward difference method: The output of $f(x)$ at $x=x_0$ is $y_0$, then,
+\begin{align}
+y_1=y_0+hf'\brak{x_0,y_0}\label{eq:fwdeuler}
+\end{align}
+where $y_1$ is the value of the function at 
+\begin{align}
+x=x_0+h
+\end{align}
+
 \item 
-Newton Raphson method:The improved guess of the root of $f(x)$ is given by:\\
-$x_1=x_0-\frac{f(x_0)}{f'(x_0)}\label{eq:raph}$\\ 
+Newton Raphson method:The improved guess of the root of $f(x)$ is given by:
+\begin{align}
+x_1=x_0-\frac{f(x_0)}{f'(x_0)}\label{eq:raph}
+\end{align} 
 Where $x_0$ is the old guess and $x_1$ is the improved guess.
 
 

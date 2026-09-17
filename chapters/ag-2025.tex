@@ -11,7 +11,7 @@
 \end{enumerate}
 \solution
      The sample space is S $\in \{1,2,3,4,5,6\}$.
-     Let us define a variable $Y_1$ as follows: 
+     Let us define a variable $Y_1$ as follows
      \begin{align}
          Y_1=
             \begin{cases}
@@ -19,7 +19,7 @@
                 0&X_1\neq6
             \end{cases}
      \end{align}
-     Now, The PMF is defined as:
+     Now, The PMF is defined as
         \begin{align}
             P_{Y_1}(k)=
                 \begin{cases}
@@ -50,15 +50,15 @@
      \begin{align}      
               =\sum P_Y\brak{k}Z^{-k}
               \end{align}
-So, we can say:        
+So, we can say      
         \begin{align}
             P_Y\brak{k}&=^3C_k\,\,q^{3-k}\,\,p^k
     \end{align}
     The above situation is called as a binomial distribution.
     %\noindent Step 3: Using binomial distribution to get required probability
     We need the situation where $p$ appears exactly once. So, we consider only the term where the power of $p$ is 1.
-    The required term is :  $^3C_1\,\,p\,\,q^2$.
-    Substituting the values of $p$ and $q$, we get:
+    The required term is  $^3C_1\,\,p\,\,q^2$.
+    Substituting the values of $p$ and $q$, we get
     \begin{align}
         ^3C_1\,\frac{1}{6}\,\,\brak{\frac{5}{6}}^2
         =\frac{75}{216}
@@ -86,7 +86,7 @@ codes/Probability.c
     \begin{enumerate}
   	\item
     Let the roots whose sum is 1 be $a$ and $b$.
-    Then, by using the properties of coefficients of an equation, we write:
+    Then, by using the properties of coefficients of an equation, we write
     \begin{align}
         -\brak{\frac{-3}{2}}&=a+b+c\\
                                \frac{3}{2} &=1+c\\
@@ -113,9 +113,12 @@ codes/Probability.c
     \end{align}
     Therefore, the value of $p$ is 3.
     \item
-    Calculating the roots by newton-raphson method (see \eqref{eq:raph}).
-    The given cubic equation is :$2x^3-3x^2+3x-1$.
-    Therefore, the difference equation becomes:
+    Calculating the roots by Newton-Raphson method (see \eqref{eq:raph}).
+    The given cubic equation is 
+    \begin{align}
+    2x^3-3x^2+3x-1
+    \end{align}
+    Therefore, the difference equation becomes
     \begin{align}
     x_{n+1}=x_n+\frac{2x^3-3x^2+3x-1}{6x^2-6x+3}   
     \end{align}
@@ -124,7 +127,7 @@ codes/Probability.c
     \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{figs/rson.png}
-    \caption{The depiction of newton raphson method guessing the root}
+    \caption{The depiction of Newton Raphson method guessing the root}
     \label{Newtonraphsonfig}
 \end{figure}
 
@@ -149,7 +152,7 @@ codes/raph.py
 \end{enumerate}
 \solution
 A matrix is said to be singular if its row echelon form has a row full of zeroes.
-Finding row echelon form of the given matrix:
+Finding row echelon form of the given matrix
 \begin{align*}
     \myvec{
         x& -3 \\
@@ -190,7 +193,7 @@ Finding row echelon form of the given matrix:
   %      }$\bigskip\\  
 %\end{center}
 %\noindent Step 2: Making the bottom row to be full of zeroes:\medskip\\
-Equating $\frac{\brak{-6-x^2+5x}}{2}$ to zero gives us: 
+Equating $\frac{\brak{-6-x^2+5x}}{2}$ to zero gives us
 \begin{align}
     -6-x^2+5x=0\\
     x^2-5x+6=0
@@ -270,7 +273,7 @@ codes/Quicksort.c
 
 \solution
     The given sequence is a geometric progression with initial term as 1 and common ratio as $q$ and the number of terms are $r+1$.(The series converges only if $q<1$).
-    Applying formula \eqref{eq:sumofgp}, we get :
+    Applying formula \eqref{eq:sumofgp}, we get 
     \begin{align}
         &1\,\frac{q^{r+1}-1}{q-1}\\
         &=\frac{1-q^{r+1}}{1-q}\\
@@ -302,7 +305,7 @@ codes/gp.py
         We use the idea of taylor series expansion (converges if $x<1$) to solve the problem.\\
         
        \begin{align}
-        &\frac{x\brak{\cos\brak{x}}-\sin\brak{x}}{x^2\sin\brak{x}}\\
+        &\frac{x\brak{\cos\brak{x}}-\sin\brak{x}}{x^2\sin\brak{x}}
         \end{align}
         From \eqref{eq:expansions}
         \begin{align}
@@ -322,7 +325,7 @@ The following code simulates the result:
 codes/Plottinglimit.py
 \end{lstlisting}
 
- The output graph is shown below:\\
+ The output graph is shown below
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{figs/limitplot.png}
@@ -346,7 +349,7 @@ codes/Plottinglimit.py
 
 
 \solution
-We use Euler's theorem for homogeneous functions.(Refer to \eqref{eq:eulerhomo} for the theorem)
+We use Euler's theorem for homogeneous functions.(see \eqref{eq:eulerhomo})
 %Step 1: Proving the given function is homogeneous:\medskip 
 \begin{align}
     u=g\brak{x,y}&=x^4+y^4+3x^2y^2\\
@@ -354,9 +357,9 @@ g\brak{\alpha x,\alpha y}&=\alpha^4\brak{x^4+y^4+3x^2y^2}
 \end{align}
 Therefore, u is a homogeneous function of degree 4.
 %Step 2: Using Euler's theorem to get the answer\medskip\\
-Since we know that the given equation is homogeneous and of degree 4, we can apply this theorem.
+Since we know that the given equation is homogeneous and of degree 4, we can apply this theorem. (see \eqref{eq:eulerhomo})
 \begin{align}\
-    x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}&=4u \tag{Refer equation \eqref{eq:eulerhomo}}
+    x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}&=4u 
 \end{align}
 Since they asked for its reciprocal, the answer is $\frac{1}{4u}$
 
@@ -372,14 +375,14 @@ Since they asked for its reciprocal, the answer is $\frac{1}{4u}$
 
 \begin{enumerate}
 \item
-Let us define a function G(s) such that:
+Let us define a function G(s) such that
 \begin{align}
-    y&\system{L}G\brak{s}\\
-    y'&\system{L}sG\brak{s} \tag{Refer \eqref{eq:laplace1d}}
+    y&\system{L}G\brak{s}
 \end{align}
-Applying the Laplace transform:
- \begin{align}
-     sG\brak{s}&=3G\brak{s}+2\mathcal{L}\{e^x\}\tag{From \eqref{eq:linearlaplace}}
+From \eqref{eq:laplace1d}
+\begin{align}
+    y'&\system{L}sG\brak{s} \\
+     sG\brak{s}&=3G\brak{s}+2\mathcal{L}\{e^x\}
  \end{align}
 
 Now, we evaluate G(s)
@@ -387,34 +390,34 @@ Now, we evaluate G(s)
     G\brak{s}\brak{s-3}&=\frac{2}{s-1}\\
     G\brak{s}&=\frac{2}{\brak{s-1}\brak{s-3}}
    \end{align}
-    \text{Using partial fractions:}
+    \text{Using partial fractions}
 \begin{align}
     G\brak{s}&=\left(\frac{1}{s-3}-\frac{1}{s-1}\right)
 \end{align}
-Finding y using inverse Laplace transform:
+Finding y using inverse Laplace transform
 \begin{align}
    y&\system{L}G\brak{s}
   \end{align}
-From \eqref{eq:linearinverselaplace} and \eqref{eq:laplacee^ax},we can write:
+From \eqref{eq:laplacee^ax},we can write
 \begin{align}
                  y&=e^{3x}-e^{x} 
 \end{align}
-finding y based on initial conditions:
+finding y based on initial conditions
 \begin{align}
     x&=0.3\tag{given}\\
     y&=e^{3\times0.3}-e^{0.3}\\
     &=1.110
 \end{align}
 \item
-Using forward euler method (see \eqref{eq:fwdeuler})to find the graph.The difference function of forward euler becomes:
+Using forward Euler method (see \eqref{eq:fwdeuler})to find the graph.The difference function of forward Euler becomes:
 \begin{align}
 y_{n+1}=y_{n}+h(3y_n+2e^x)
 \end{align}
-Using it, the following graph is obtained: 
+Using it, the following graph is obtained
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{figs/Euler.png}
-    \caption{The plot depicting the divergence of forward euler from original at large values}
+    \caption{The plot depicting the divergence of forward Euler from original at large values}
     \label{Forwardeuler}
 \end{figure}
 \end{enumerate}
