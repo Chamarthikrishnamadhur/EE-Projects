@@ -4,12 +4,12 @@ Z transform:\label{eq:ztransform}\\
 \begin{align}
 	M_{Y_1}\brak{Z}=E\brak{Z^{-Y_1}}=\sum\, P_{Y_1}\brak{k}\,Z^{-k}\label{eq:ztransformdef}
 \end{align}
-If y1,y2..yn are independent events:
+If $Y_1,Y_2..Y_n$ are independent events:
 \begin{align}
 M_Y\brak{Z}=M_{Y_1}\brak{Z}\,\, M_{Y_2}\brak{Z}\,.......\,M_{Y_n}\brak{Z}\label{eq:ztransformindep}
 \end{align}
 
-\item
+
 Laplace transforms of some common functions:\label{eq:laplacecommon}
 
 \item
@@ -17,7 +17,7 @@ Laplace transforms of some common functions:\label{eq:laplacecommon}
 \cos\brak{at}\system{L}\frac{s}{s^2+a^2}\label{eq:laplacecos}
 \end{align}
 
-Proof:
+\proof
 \begin{align}
     \cos(at)&\system{L}\int_{0}^{\infty}\cos\brak{at}\,e^{-st}\,dt=I\\
                           I&=\int_{0}^{\infty}\frac{d\brak{\sin\brak{at}}}{a}\,e^{-st}\\
@@ -34,7 +34,7 @@ Proof:
 \begin{align}
 \sin\brak{at}&\system{L}\frac{a}{s^2+a^2}\label{eq:laplacesin}
 \end{align}
-Proof:
+\proof
 \begin{align}
     \sin\brak{at}&\system{L}\int_{0}^{\infty}\sin\brak{at}\,e^{-st}\,dt=I\\
                           I&=\int_{0}^{\infty}\frac{d\brak{-\cos\brak{at}}}{a}\,e^{-st}\\
@@ -51,11 +51,11 @@ Proof:
 \begin{align}
 \sinh\brak{at}\system{L}\frac{a}{s^2-a^2}\label{eq:laplacesinh}
 \end{align}
-Proof:
+\proof
 \begin{align}
 \sinh\brak{at}&\system{L}\int_0^\infty \frac{e^{at}-e^{-at}}{2}\,e^{-st} dt\\
                             &=\frac{1}{2}\int_0^\infty e^{\brak{a-s}\brak{t}} dt -\frac{1}{2}\int_0^\infty e^{\brak{-a-s}\brak{t}}dt\\
-                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty-\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty\tag{assume s$>$a for integral to be finite}\\
+                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty-\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty\tag{assume $re(s)>re(a)$ for integral to be finite}\\
                             &=\frac{1}{2}\brak{\frac{1}{s-a}-\frac{1}{s+a}}\\
                             &=\frac{1}{2}\brak{\frac{2a}{s^2-a^2}}\\
                            I&=\frac{a}{s^2-a^2}
@@ -64,18 +64,18 @@ Proof:
 \begin{align}
 \cosh\brak{at}\system{L}\frac{s}{s^2-a^2}\label{eq:laplacecosh}
 \end{align}
-Proof:
+\proof
 \begin{align}
 \cosh\brak{at}&\system{L}\int_0^\infty \frac{e^{at}+e^{-at}}{2}\,e^{-st} dt\\
                             &=\frac{1}{2}\int_0^\infty e^{\brak{a-s}\brak{t}} dt +\frac{1}{2}\int_0^\infty e^{\brak{-a-s}\brak{t}}dt\\
-                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty+\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty\tag{assume s$>$a for integral to be finite}\\
+                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty+\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty\tag{assume $re(s)>re(a)$ for integral to be finite}\\
                             &=\frac{1}{2}\brak{\frac{1}{s-a}+\frac{1}{s+a}}\\
                             &=\frac{1}{2}\brak{\frac{2s}{s^2-a^2}}\\
                            I&=\frac{s}{s^2-a^2}
 \end{align}
 
 \item
-Sum of n terms of a gp\\
+Sum of $n$ terms of a gp\\
 \begin{align}
 	\sum_{i=1}^{n}q^i=q\frac{q^n-1}{q-1}\label{eq:sumofgp}
 \end{align}
@@ -95,12 +95,12 @@ It states that if a function $f(x,y)$is homogeneous of degree n,then the followi
 \begin{equation}
 	f'\brak{x}\system{L}sG\brak{s}-f\brak{0}\label{eq:laplace1d}
 \end{equation}
-Proof\\
-Let G(s) be the laplace transform of y=f(x):\\
+\proof
+Let G(s) be the Laplace transform of y=f(x):\\
 \begin{align}
     y\system{L}G\brak{s}
 \end{align}
-By definition of laplace transform,\\
+By definition of Laplace transform,\\
 \begin{align}
 	G\brak{s}=\int_{0}^{\infty}f(x)e^{-sx}dx
 \end{align}
@@ -113,26 +113,26 @@ integrating by parts,
 			 f'\brak{x}&\system{L}sG\brak{s}-f\brak{0}			 		
 \end{align}
 \item
-The laplace transform is a linear function\label{eq:linearlaplace}
+The Laplace transform is a linear function\label{eq:linearlaplace}
 %\begin{align}
 %af\brak{x}+bg\brak{x}\}=a\mathcal{L}\{f\brak{x}\}+b\mathcal{L}\{g\brak{x}\}\label{eq:linearlaplace}
 %\end{align} 
 \item 
-The inverse laplace transform is a linear function\label{eq:linearinverselaplace}
+The inverse Laplace transform is a linear function\label{eq:linearinverselaplace}
 %\begin{align}
 %\mathcal{L}^{-1}\{af\brak{x}+bg\brak{x}\}=a\mathcal{L}\{f\brak{x}\}+b\mathcal{L}\{g\brak{x}\}\label{eq:linearinverselaplace}
 %\end{align} 
 \item
-laplace transform of $e^{ax}$
+Laplace transform of $e^{ax}$
 \begin{align}
 	e^{ax}&\system{L}\frac{1}{s-a}\label{eq:laplacee^ax}
 \end{align}
-Proof:
+\proof
 \begin{align}	
     e^{ax}&\system{L}\int_{0}^{\infty}e^{at}\,e^{-st} dt\\
                       &=\int_{0}^{\infty}e^{\brak{a-s}\brak{t}} dt\\
                       &=\frac{1}{a-s}\,\,(e^{\brak{a-s}\brak{t}}\big|_{0}^{\infty})\\
-                      &=\frac{1}{a-s}(0-1)\tag{Assuming that s$>$1}\\
+                      &=\frac{1}{a-s}(0-1)\tag{Assuming that $re(s)>re(a)$}\\
                       &=\frac{1}{s-a}
 \end{align}
 \item
