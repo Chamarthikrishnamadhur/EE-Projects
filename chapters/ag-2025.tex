@@ -39,9 +39,10 @@
 	M_{Y_1}(Z)&=\brak{P_{Y_1}(1)Z^{-1} +P_{Y_1}(0)Z^{-0}}\\
     				&=Z^{-1}+q
         \end{align}
-    We know that $Y_1,Y_2,Y_3$ are independent events. So,
+    We know that $Y_1,Y_2,Y_3$ are independent events. From 
+\eqref{eq:ztransformindep}
     \begin{align}
-    M_Y\brak{Z}&=M_{Y_1}\brak{Z}\,\, M_{Y_2}\brak{Z}\,\,M_{Y_3}\brak{Z}\tag{Refer \eqref{eq:ztransformindep}}\\
+    M_Y\brak{Z}&=M_{Y_1}\brak{Z}\,\, M_{Y_2}\brak{Z}\,\,M_{Y_3}\brak{Z}\\
         M_Y\brak{Z}&=\brak{pZ^{-1}+q}^3\\
               &=\sum_{k=0}^3{^3}C_k\,\,q^{3-k}\,\, \brak{pZ^{-1}}^k\\    
               &=\sum P_Y\brak{k}Z^{-k}\tag{Refer \eqref{eq:ztransformdef}}
@@ -237,8 +238,10 @@ From \eqref{eq:laplacecommon},
 
 \solution
 To find the median, we need to arrange the data in ascending or descending order.
-After arranging them in ascending order, the data is as follows:\medskip\\
-\{130,137,138,138,144,146,149,154,156,160\}\medskip\\
+After arranging them in ascending order, the data is as follows
+\begin{align}
+130,137,138,138,144,146,149,154,156,160
+\end{align}
 The number of elements in the data set are 10.
 Since it is an even number, the median ($M$) is defined as the average of the middle 2 terms (in this case, average of $5^{th}$ and $6^{th}$ terms).
 Therefore, the median($M$) is $\frac{144+146}{2} = 145.0$.
