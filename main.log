@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Termux) (preloaded format=pdflatex 2026.5.4)  17 SEP 2026 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Termux) (preloaded format=pdflatex 2026.5.4)  18 OCT 2026 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -173,6 +173,20 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 b/gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
 )
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsfon
+ts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsfon
+ts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks22
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsmat
 h/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
@@ -186,7 +200,7 @@ Package: amstext 2024/11/17 v2.01 AMS text
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsmat
 h/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks22
+\@emptytoks=\toks23
 \ex@=\dimen182
 ))
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsmat
@@ -228,21 +242,21 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count301
 \dspbrk@lvl=\count302
-\tag@help=\toks23
+\tag@help=\toks24
 \row@=\count303
 \column@=\count304
 \maxfields@=\count305
-\andhelp@=\toks24
+\andhelp@=\toks25
 \eqnshift@=\dimen185
 \alignsep@=\dimen186
 \tagshift@=\dimen187
 \tagwidth@=\dimen188
 \totwidth@=\dimen189
 \lineht@=\dimen190
-\@envbody=\toks25
+\@envbody=\toks26
 \multlinegap=\skip53
 \multlinetaggap=\skip54
-\mathdisplay@stack=\toks26
+\mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
@@ -312,7 +326,7 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen196
 \ar@mcellbox=\box67
 \extrarowheight=\dimen197
-\NC@list=\toks27
+\NC@list=\toks28
 \extratabsurround=\skip55
 \backup@length=\skip56
 \ar@cellbox=\box68
@@ -320,20 +334,20 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amscls
 /amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks28
-\thm@bodyfont=\toks29
-\thm@headfont=\toks30
-\thm@notefont=\toks31
-\thm@headpunct=\toks32
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
 \thm@preskip=\skip57
 \thm@postskip=\skip58
 \thm@headsep=\skip59
-\dth@everypar=\toks33
+\dth@everypar=\toks34
 )
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/jknapl
 tx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup4
+\symrsfs=\mathgroup6
 )
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/sttool
 s/stfloats.sty
@@ -370,7 +384,7 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 cs/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-\pIIe@GRAPH=\toks34
+\pIIe@GRAPH=\toks35
 \@arclen=\dimen198
 \@arcrad=\dimen199
 \pIIe@tempdima=\dimen256
@@ -389,10 +403,12 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/tools/
 bm.sty
 Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup5
-\symboldletters=\mathgroup6
-\symboldsymbols=\mathgroup7
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
 Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
 Package bm Info: No bold for \U/rsfs/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
@@ -425,7 +441,7 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LT@rows=\count326
 \c@LT@tables=\count327
 \c@LT@chunks=\count328
-\LT@p@ftn=\toks35
+\LT@p@ftn=\toks36
 )
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/tools/
 tabularx.sty
@@ -436,7 +452,7 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@target=\dimen267
 \TX@delta=\dimen268
 \TX@cols=\count329
-\TX@ftn=\toks36
+\TX@ftn=\toks37
 )
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/multir
 ow/multirow.sty
@@ -451,7 +467,7 @@ em/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip70
 \enit@outerparindent=\dimen270
-\enit@toks=\toks37
+\enit@toks=\toks38
 \enit@inbox=\box75
 \enit@count@id=\count331
 \enitdp@description=\count332
@@ -498,7 +514,7 @@ siclayer/pgf.sty
 ilities/pgfrcs.sty
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
 utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks38
+\pgfutil@everybye=\toks39
 \pgfutil@tempdima=\dimen281
 \pgfutil@tempdimb=\dimen282
 )
@@ -541,12 +557,12 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
 utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks39
-\pgfkeys@temptoks=\toks40
+\pgfkeys@pathtoks=\toks40
+\pgfkeys@temptoks=\toks41
 
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
 utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks41
+\pgfkeys@tmptoks=\toks42
 ))
 \pgf@x=\dimen285
 \pgf@y=\dimen286
@@ -564,9 +580,9 @@ utilities/pgfkeyslibraryfiltered.code.tex
 \c@pgf@countb=\count338
 \c@pgf@countc=\count339
 \c@pgf@countd=\count340
-\t@pgf@toka=\toks42
-\t@pgf@tokb=\toks43
-\t@pgf@tokc=\toks44
+\t@pgf@toka=\toks43
+\t@pgf@tokb=\toks44
+\t@pgf@tokc=\toks45
 \pgf@sys@id@count=\count341
 
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
@@ -628,9 +644,9 @@ math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen295
 \pgfmath@count=\count344
 \pgfmath@box=\box78
-\pgfmath@toks=\toks45
-\pgfmath@stack@operand=\toks46
-\pgfmath@stack@operation=\toks47
+\pgfmath@toks=\toks46
+\pgfmath@stack@operand=\toks47
+\pgfmath@stack@operation=\toks48
 )
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
 math/pgfmathfunctions.code.tex)
@@ -791,8 +807,8 @@ utilities/pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen322
 \pgffor@skip=\dimen323
-\pgffor@stack=\toks48
-\pgffor@toks=\toks49
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
 ))
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
 frontendlayer/tikz/tikz.code.tex
@@ -931,8 +947,8 @@ uitikz/pgfcircflow.tex))
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/tools/
 verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks50
-\verbatim@line=\toks51
+\every@verbatim=\toks51
+\verbatim@line=\toks52
 \verbatim@in@stream=\read3
 )
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/hyperr
@@ -1135,7 +1151,7 @@ libraries/pgflibraryintersections.code.tex
 frontendlayer/tikz/libraries/tikzlibrarymath.code.tex
 \tikz@math@for@depth=\count376
 \tikz@math@dimen=\dimen368
-\tikz@math@toks=\toks52
+\tikz@math@toks=\toks53
 )
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
 frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
@@ -1348,11 +1364,19 @@ File: tikzlibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 libraries/pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/pgf/
+libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/listin
 gs/listings.sty
 \lst@mode=\count379
 \lst@gtempboxa=\box94
-\lst@token=\toks53
+\lst@token=\toks54
 \lst@length=\count380
 \lst@currlwidth=\dimen380
 \lst@column=\count381
@@ -1576,12 +1600,12 @@ or `english'. on input line 20.
 \scratchbox=\box142
 \nofMPsegments=\count407
 \nofMParguments=\count408
-\everyMPshowfont=\toks54
+\everyMPshowfont=\toks55
 \MPscratchCnt=\count409
 \MPscratchDim=\dimen394
 \MPnumerator=\count410
 \makeMPintoPDFobject=\count411
-\everyMPtoPDFconversion=\toks55
+\everyMPtoPDFconversion=\toks56
 )
 (/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/epstop
 df-pkg/epstopdf-base.sty
@@ -1600,7 +1624,7 @@ Package hyperref Info: Link coloring OFF on input line 20.
 \openout5 = `main.out'.
 
 \c@lstlisting=\count412
-<figs/logo.jpg, id=43, 2537.48pt x 2047.65pt>
+<figs/logo.jpg, id=59, 2537.48pt x 2047.65pt>
 File: figs/logo.jpg Graphic file (type jpg)
 <use figs/logo.jpg>
 Package pdftex.def Info: figs/logo.jpg  used on input line 47.
@@ -1611,10 +1635,18 @@ ist/fonts/enc/dvips/base/8r.enc}
 
 
  <./figs/logo.jpg>] [2] (./main.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsfon
+ts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsfon
+ts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
 
 
@@ -1625,48 +1657,631 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-[3] (./formulae/formulae.tex
+[3] (./EE26BTECH11202/chapters/ae-2026_formulae.tex [4
+
+]
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 128.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[6]
+
+LaTeX Warning: Command \j invalid in math mode on input line 197.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 197.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 218.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 218.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 223.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 223.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 233.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[7]
+<EE26BTECH11202/figs/Fourier.png, id=201, 650.43pt x 289.08pt>
+File: EE26BTECH11202/figs/Fourier.png Graphic file (type png)
+<use EE26BTECH11202/figs/Fourier.png>
+Package pdftex.def Info: EE26BTECH11202/figs/Fourier.png  used on input line 27
+8.
+(pdftex.def)             Requested size: 273.14647pt x 121.39954pt.
+
+LaTeX Warning: Command \j invalid in math mode on input line 290.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 290.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 301.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 301.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 301.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 301.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 301.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 301.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 301.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 301.
+
+[8 <./EE26BTECH11202/figs/Fourier.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[13] (./EE26BTECH11202/figs/Spring.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[14] (./EE26BTECH11202/figs/spring_deriv.tex) [15]) (./EE26BTECH11213/chapters/
+bt-2025-formulae.tex
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 \end{align}
+               
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 \end{align}
+                
+Underfull \vbox (badness 1400) has occurred while \output is active []
+
+[16]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.9.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98     \end{align}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 \end{align}
+                 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.11.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 \end{align}
+                 
+<EE26BTECH11213/figs/pmf.pdf, id=407, 462.52798pt x 346.89601pt>
+File: EE26BTECH11213/figs/pmf.pdf Graphic file (type pdf)
+<use EE26BTECH11213/figs/pmf.pdf>
+Package pdftex.def Info: EE26BTECH11213/figs/pmf.pdf  used on input line 150.
+(pdftex.def)             Requested size: 254.9356pt x 191.20625pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.12.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.160 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.12.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.12.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.12.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.12.5
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 \end{align}
+                 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18 <./EE26BTECH11213/figs/pmf.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.13.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.14.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.183 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.15.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.188 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.16.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.198 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.16.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.202 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.16.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.17.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.246 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.256 \end{align}
+                 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.18.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.260 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.19.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.267 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.20.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.277 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.21.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.283 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.21.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.290 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.21.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.290 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.21.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.294 \end{align}
+                 ) (./chapters/ag-2025-formulae.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 \end{align}
+                [20]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \end{align}
+                
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[4
-
-]
+[21]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.5.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 \end{align}
+                
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5]
+[22]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6.3}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.6.4}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \end{align}
+                
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 \end{align}
+                
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \end{align}
+                
 Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.9.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \end{align}
+                
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 \begin{equation}
+                     
 Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.10.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102 \end{align}
+                 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[6]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.13.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.13.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.137 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.13.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.137 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.13.4
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.137 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.13.5
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.137 \end{align}
+                 
 Underfull \hbox (badness 10000) in paragraph at lines 139--143
 
  []
@@ -1674,7 +2289,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--143
 ) (./chapters/ag-2025.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[7]
+[24]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -1689,11 +2304,23 @@ l.30         \end{align}
                         
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8]
+[25]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.91     \end{align}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.91     \end{align}
+                    
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[9]
-<figs/rson.png, id=214, 462.528pt x 346.896pt>
+[26]
+<figs/rson.png, id=587, 462.528pt x 346.896pt>
 File: figs/rson.png Graphic file (type png)
 <use figs/rson.png>
 Package pdftex.def Info: figs/rson.png  used on input line 123.
@@ -1711,9 +2338,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}
                    \relax 
 l.194 \end{align}
                  
-Underfull \vbox (badness 3514) has occurred while \output is active []
+Underfull \vbox (badness 3547) has occurred while \output is active []
 
-[10 <./figs/rson.png>]
+[27 <./figs/rson.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -1743,7 +2370,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.3}
 <to be read again> 
                    \relax 
 l.275     \end{align}
-                      [11]
+                      [28]
 Underfull \hbox (badness 10000) in paragraph at lines 298--300
 
  []
@@ -1759,16 +2386,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
  []
 
-<figs/limitplot.png, id=254, 462.528pt x 346.896pt>
+<figs/limitplot.png, id=627, 462.528pt x 346.896pt>
 File: figs/limitplot.png Graphic file (type png)
 <use figs/limitplot.png>
 Package pdftex.def Info: figs/limitplot.png  used on input line 323.
 (pdftex.def)             Requested size: 254.9356pt x 191.20625pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 324.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 324.
-[12]
+[29]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -1789,52 +2412,57 @@ l.374 \end{align}
                  
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13 <./figs/limitplot.png>]
-<figs/Euler.png, id=301, 462.528pt x 346.896pt>
+[30 <./figs/limitplot.png>]
+<figs/Euler.png, id=672, 462.528pt x 346.896pt>
 File: figs/Euler.png Graphic file (type png)
 <use figs/Euler.png>
 Package pdftex.def Info: figs/Euler.png  used on input line 411.
 (pdftex.def)             Requested size: 182.09764pt x 136.57513pt.
-) [14 <./figs/Euler.png>] (./main.aux)
+) [31 <./figs/Euler.png>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EEDACF385CC87CD6FAA12AE88E3AEC19;346.
+(rerunfilecheck)             Checksum: CFB93F537CBA4AF2AEF5A87654BFEAF2;674.
  ) 
 Here is how much of TeX's memory you used:
- 52669 strings out of 467349
- 1294160 string characters out of 5401406
- 1931623 words of memory out of 5000000
- 80826 multiletter control sequences out of 15000+600000
- 664323 words of font info for 114 fonts, out of 8000000 for 9000
+ 53769 strings out of 467349
+ 1314358 string characters out of 5401406
+ 1944186 words of memory out of 5000000
+ 81688 multiletter control sequences out of 15000+600000
+ 667299 words of font info for 128 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,18n,118p,1194b,1389s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb></data/data/com.termux/files/usr/share/texlive/2026
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></data/data/com.termux/fi
-les/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
+blic/amsfonts/cm/cmbx10.pfb></data/data/com.termux/files/usr/share/texlive/2026
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></data/data/com.termux/fil
+es/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb></data/data/com.termux/files/usr/share/texlive/2026/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></data/data/com.termux/files/
-usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></dat
-a/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr6.pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></data/data/com.termux/files/usr/sha
-re/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></data/dat
-a/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy5.pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy6.pfb></data/data/com.termux/files/usr/share/
-texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></data/data/co
-m.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.p
-fb></data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/u
-rw/times/utmr8a.pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf-d
-ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (14 pages, 640793 bytes).
+ic/amsfonts/cm/cmmi10.pfb></data/data/com.termux/files/usr/share/texlive/2026/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></data/data/com.termux/files
+/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></d
+ata/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></data/data/com.termux/files/usr/
+share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></data/da
+ta/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></data/data/com.termux/files/usr/share
+/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></data/data/c
+om.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy6.pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb></data/data/com.termux/files/usr/share/tex
+live/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></data/data
+/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></data/data/com.termux/files/usr/share/tex
+live/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.termux/fi
+les/usr/share/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (31 pages, 779701 bytes).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 347 compressed objects within 4 object streams
- 186 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 854 PDF objects out of 1000 (max. 8388607)
+ 715 compressed objects within 8 object streams
+ 383 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
