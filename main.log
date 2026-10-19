@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Termux) (preloaded format=pdflatex 2026.5.4)  19 OCT 2026 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Termux) (preloaded format=pdflatex 2026.5.4)  19 OCT 2026 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2343,48 +2343,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 \end{align}
+l.141 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.164 \end{align}
-                  [27 <./figs/rson.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.192 \end{align}
-                 
+l.162 \end{align}
+                  [27 <./figs/rson.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.5.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.214 \end{align}
+l.184 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.245     \end{align}
+l.215     \end{align}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.6.2}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.245     \end{align}
+l.215     \end{align}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{equation.6.3}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.245     \end{align}
-                     
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+l.215     \end{align}
+                      [28]
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
@@ -2393,9 +2384,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.7.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.275         \end{align}
+l.245         \end{align}
                          
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 245--247
 
  []
 
@@ -2404,75 +2395,75 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.7.2}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.280        \end{align}
+l.250        \end{align}
                         
 pdfTeX warning (ext4): destination with the same identifier (name{equation.7.3}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.280        \end{align}
+l.250        \end{align}
                         
-<figs/limitplot.png, id=626, 462.528pt x 346.896pt>
+<figs/limitplot.png, id=631, 462.528pt x 346.896pt>
 File: figs/limitplot.png Graphic file (type png)
 <use figs/limitplot.png>
-Package pdftex.def Info: figs/limitplot.png  used on input line 293.
+Package pdftex.def Info: figs/limitplot.png  used on input line 263.
 (pdftex.def)             Requested size: 254.9356pt x 191.20625pt.
-[29]
+[29 <./figs/limitplot.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.319 \end{align}
+l.289 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.8.2}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.319 \end{align}
+l.289 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.9.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.344 \end{align}
+l.314 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.9.2}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.354    \end{align}
+l.324    \end{align}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{equation.9.3}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.354    \end{align}
+l.324    \end{align}
                     
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[30 <./figs/limitplot.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.9.4}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.358 \end{align}
+l.328 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.9.5}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.362   \end{align}
+l.332   \end{align}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{equation.9.6}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.366 \end{align}
+l.336 \end{align}
                  
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[30]
 <figs/Euler.png, id=669, 462.528pt x 346.896pt>
 File: figs/Euler.png Graphic file (type png)
 <use figs/Euler.png>
-Package pdftex.def Info: figs/Euler.png  used on input line 381.
+Package pdftex.def Info: figs/Euler.png  used on input line 351.
 (pdftex.def)             Requested size: 182.09764pt x 136.57513pt.
 ) [31 <./figs/Euler.png>] (./main.aux)
  ***********
@@ -2485,11 +2476,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  53757 strings out of 467349
  1314276 string characters out of 5401406
- 1942416 words of memory out of 5000000
+ 1943416 words of memory out of 5000000
  81694 multiletter control sequences out of 15000+600000
  667299 words of font info for 128 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,18n,118p,1194b,1388s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,18n,118p,1194b,1387s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx10.pfb></data/data/com.termux/files/usr/share/texlive/2026
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></data/data/com.termux/fil
@@ -2517,7 +2508,7 @@ usr/share/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></data/data/
 com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on main.pdf (31 pages, 786899 bytes).
+Output written on main.pdf (31 pages, 786370 bytes).
 PDF statistics:
  847 PDF objects out of 1000 (max. 8388607)
  707 compressed objects within 8 object streams

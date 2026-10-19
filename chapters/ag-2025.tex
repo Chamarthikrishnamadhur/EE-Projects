@@ -1,7 +1,7 @@
 \begin{enumerate}[label=\thesubsection.\arabic*,ref=\thesubsection.\theenumi]
 %
  \item A fair six-faced dice, with the faces labelled ‘1’, ‘2’, ‘3’, ‘4’, ‘5’, and ‘6’, is rolled
-    thrice. What is the probability of rolling ‘6’ exactly once?\hfill(GATE AG 2025)
+    thrice. What is the probability of rolling ‘6’ exactly once?\hfill(AG 2025)
 	\begin{multicols}{4}
  \begin{enumerate}
     \item $\frac{75}{216}$
@@ -39,7 +39,7 @@ codes/Probability.c
 		2x^3 - 3x^2 + px - 1=0
        \label{eq:absum-root}
 	\end{align}
-		and sum of the two roots is 1, the value of $p$ is \hfill(GATE AG 2025)
+		and sum of the two roots is 1, the value of $p$ is \hfill(AG 2025)
 	\begin{multicols}{4}
 \begin{enumerate}
     \item 2
@@ -107,75 +107,45 @@ codes/raph.py
     \caption{The depiction of newton raphson method guessing the root}
     \label{fig:Newtonraphsonfig}
 \end{figure}
-\item If the matrix $\myvec{ x & -3 \\ 2 & x-5 }$ is singular, sum of the values of $x$ is:     \hfill(GATE AG 2025)   
+\item If the matrix $\myvec{ x & -3 \\ 2 & x-5 }$ is singular, sum of the values of $x$ is     \hfill(AG 2025)   
+	\begin{multicols}{4}
     \begin{enumerate}
     \item 5
     \item 6
     \item  0
     \item $-1$
 \end{enumerate}
+	\end{multicols}
+%
 \solution
-A matrix is said to be singular if its row echelon form has a row full of zeroes.
-Finding row echelon form of the given matrix:
+Through row reduction, 
 \begin{align*}
     \myvec{
         x& -3 \\
         2& x-5
     }
-    \xleftrightarrow{R_2 \to \frac{R_2}{2}}
+    \xleftrightarrow{R_2 \leftrightarrow R_1}
     \myvec{
-        x&-3\\
-        1&\frac{(x-5)}{2} 
-         } 
-    \xleftrightarrow{R_1 \to R_1 - xR_2}\\
-    \myvec{
-        x-x\cdot1&\frac{-6-(x-5)}{2}\\
-        1&\frac{\brak{x-5}}{2} 
-        }
-	\xleftrightarrow{R_2 \to R_1  R_2 \to R_1}
+        2& x-5 \\
+        x& -3 
+    }
+    \xleftrightarrow{R_2 \leftarrow 2R_2 - xR_1}
 	\myvec{
-        1&\frac{\brak{x-5}}{2}\\
-        0&\frac{\brak{-6-x^2+5x}}{2}
+        2& x-5 \\
+        0& -6-x^2+5x
         }    
 \end{align*}
-%\begin{center}
- %     $\myvec{
-  %      x&-3\\
-  %      2&x-5 
-  %     }$\bigskip\\
-  %      $\myvec{
-  %      x-x\cdot1&\frac{-6-(x-5)}{2}\\
-  %      1&\frac{\brak{x-5}}{2} 
-  %     }$\bigskip\\
-  %      $\myvec{
-  %      0&\frac{\brak{-6-x^2+5x}}{2}\\
-  %      1&\frac{\brak{x-5}}{2} 
-  %      }$\bigskip\\
-  %      $\myvec{
-  %      1&\frac{\brak{x-5}}{2}\\
-  %      0&\frac{\brak{-6-x^2+5x}}{2}
-  %      }$\bigskip\\  
-%\end{center}
-%\noindent Step 2: Making the bottom row to be full of zeroes:\medskip\\
-Equating $\frac{\brak{-6-x^2+5x}}{2}$ to zero gives us: 
+For the matrix to be singular,
 \begin{align}
-    -6-x^2+5x=0\\
     x^2-5x+6=0
 \end{align}
-So, the sum of values of $x$ is 5.
-The following code converts a numerical matrix into its row echelon form.So,
-we can verify that the values of ($x=2,3$) give us a matrix with a row of zeroes
-The following code verifies the result:
+Hence, the sum of roots is 5.
+The following code verifies the result
 \begin{lstlisting}
 codes/echelon.py
 \end{lstlisting}
-
-
-
-
-
-
-\item $\frac{s}{s^2+a^2}$ is the Laplace transform of:\hfill(GATE AG 2025)
+%
+\item $\frac{s}{s^2+a^2}$ is the Laplace transform of:\hfill(AG 2025)
     \begin{enumerate}
     \item cos$\brak{at}$
     \item sin$\brak{at}$
@@ -197,7 +167,7 @@ From \eqref{eq:laplacecommon},
 
 
 \item The median of the following set of numbers: 154, 130, 144, 137, 156, 146, 138,
-149, 160, 138 is:\hfill(GATE AG 2025)
+149, 160, 138 is:\hfill(AG 2025)
     \begin{enumerate}   
     \item[(A)] $145.0$
     \item[(B)] $145.2$
@@ -226,7 +196,7 @@ codes/Quicksort.c
 
 
 
-\item The series \\ $\sum_{n=0}^{r} q^n$ $=1+q+q^2+... ... ...$ has the sum:\hfill(GATE AG 2025)
+\item The series \\ $\sum_{n=0}^{r} q^n$ $=1+q+q^2+... ... ...$ has the sum:\hfill(AG 2025)
     \begin{enumerate}
     \item $\frac{1}{1-q}$-$\frac{q^{r+1}}{1-q}$
     \item $\frac{1}{q-1}$+$\frac{q^{r+1}}{q-1}$
@@ -254,7 +224,7 @@ codes/gp.py
 
 
 
-\item The value of $\lim_{x\to 0}\frac{x\cos\brak{x}-\sin\brak{x}}{x^2\sin\brak{x}}$\hfill(GATE AG 2025)
+\item The value of $\lim_{x\to 0}\frac{x\cos\brak{x}-\sin\brak{x}}{x^2\sin\brak{x}}$\hfill(AG 2025)
     \begin{enumerate}
         \item $\frac{-1}{3}$
         \item $\frac{1}{3}$
@@ -300,7 +270,7 @@ codes/Plottinglimit.py
 
 
 
-\item If $u=x^4+y^4+3x^2y^2$, the value of $\left(x\frac{\partial{u}}{\partial{x}}+y\frac{\partial{u}}{\partial{y}}\right)^{-1}$\hfill(GATE AG 2025)
+\item If $u=x^4+y^4+3x^2y^2$, the value of $\left(x\frac{\partial{u}}{\partial{x}}+y\frac{\partial{u}}{\partial{y}}\right)^{-1}$\hfill(AG 2025)
 \begin{enumerate}
     \item $4u$
     \item $0$
@@ -331,7 +301,7 @@ Since they asked for its reciprocal, the answer is $\frac{1}{4u}$
 
 
 
-\item The value of $y$ at $x=0.3$ and $y\brak{x=0}=0$ for the differential equation $\frac{dy}{dx}=3y+2e^x$ is \underline{\hspace{1cm}}. (Rounded off to 3 decimal places)\hfill(GATE AG 2025)
+\item The value of $y$ at $x=0.3$ and $y\brak{x=0}=0$ for the differential equation $\frac{dy}{dx}=3y+2e^x$ is \underline{\hspace{1cm}}. (Rounded off to 3 decimal places)\hfill(AG 2025)
 
 \solution
 
