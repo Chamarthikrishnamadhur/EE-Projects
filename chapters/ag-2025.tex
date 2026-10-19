@@ -34,72 +34,79 @@ The following code simulates the result
 codes/Probability.c
 \end{lstlisting}
 %
-	\item If a, b, and c are the roots of $2x^3 - 3x^2 + px - 1=0$ and sum of the two roots is 1, the value of $p$ is:\hfill(GATE AG 2025)
+	\item If $a, b$, and $c$ are the roots of 
+    \begin{align}
+		2x^3 - 3x^2 + px - 1=0
+       \label{eq:absum-root}
+	\end{align}
+		and sum of the two roots is 1, the value of $p$ is \hfill(GATE AG 2025)
+	\begin{multicols}{4}
 \begin{enumerate}
     \item 2
     \item 1
     \item 3
     \item $\frac{1}{3}$
 \end{enumerate}
-
+\end{multicols}
+%
     \solution
-    \begin{enumerate}
-  	\item
-    Let the roots whose sum is 1 be $a$ and $b$.
-    Then, by using the properties of coefficients of an equation, we write:
+    Using the sum and product of roots from high school algebra and the given information, 
     \begin{align}
-        -\brak{\frac{-3}{2}}&=a+b+c\\
-                               \frac{3}{2} &=1+c\\
-                               c&=\frac{1}{2} \label{eq:valofc}
+       \label{eq:absum}
+	    a+b&=1
+       \\
+\label{eq:sum}
+ a+b+c &=\frac{3}{2}
+ \\
+\label{eq:prod}
+        abc&=\frac{1}{2}\\
+\label{eq:pair}
+        ab+bc+ac&=\frac{p}{2}
     \end{align}
-    And
+From 
+       \eqref{eq:absum}
+       and
+\eqref{eq:sum},
     \begin{align}
-        abc&=-\brak{\frac{-1}{2}}\\
-        ab\,\frac{1}{2}&=\frac{1}{2}
-    \end{align}
-        From \eqref{eq:valofc},
-    \begin{align}         
-        ab&=1\label{eq:valofab}
-    \end{align}
-    Also,
+                               c=\frac{1}{2}, 
+			       \label{eq:valofc}
+		       \end{align}
+\eqref{eq:pair}
+can be expressed as
     \begin{align}
-        ab+bc+ac&=\brak{\frac{p}{2}}
+\frac{p}{2}	&=    \frac{abc}{c}+c\brak{a+b}=
+\frac{1}{2c} + c
+\\
+        \implies p&=3
+\label{eq:par-p}
     \end{align}
-       From \eqref{eq:valofab} and \eqref{eq:valofc},we write
-    \begin{align}
-        1+c(a+b)&=\frac{p}{2}\\
-        1+\frac{1}{2}(1)&=\frac{p}{2}
-        3=p
-    \end{align}
-    Therefore, the value of $p$ is 3.
-    \item
-    Calculating the roots by newton-raphson method (see \eqref{eq:raph}).
-    The given cubic equation is :$2x^3-3x^2+3x-1$.
-    Therefore, the difference equation becomes:
-    \begin{align}
+    upon 
+    substituting
+    from 
+       \eqref{eq:absum},
+\eqref{eq:prod}
+       and
+			       \eqref{eq:valofc}.
+Using the Newton-Raphson method     
+the difference equation for computing the root of 
+       \eqref{eq:absum-root} is
+\begin{align}
     x_{n+1}=x_n+\frac{2x^3-3x^2+3x-1}{6x^2-6x+3}   
     \end{align}
-
-    With an initial guess of 4, running this difference equation 6 times gives us the real root, which is $\frac{1}{2}$
+   from \eqref{eq:EE26BTECH11213-newton_raphson}.
+    With an initial guess of 4, running this difference equation 6 times gives us the real root, which is $\frac{1}{2}$.
+The following code verifies the result
+in 
+    \figref{fig:Newtonraphsonfig}.
+\begin{lstlisting}
+codes/raph.py
+\end{lstlisting}
     \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{figs/rson.png}
     \caption{The depiction of newton raphson method guessing the root}
-    \label{Newtonraphsonfig}
+    \label{fig:Newtonraphsonfig}
 \end{figure}
-
-\end{enumerate}
-The following code verifies the result:
-\begin{lstlisting}
-codes/raph.py
-\end{lstlisting}
-
-
-
-
-
-
-
 \item If the matrix $\myvec{ x & -3 \\ 2 & x-5 }$ is singular, sum of the values of $x$ is:     \hfill(GATE AG 2025)   
     \begin{enumerate}
     \item 5
