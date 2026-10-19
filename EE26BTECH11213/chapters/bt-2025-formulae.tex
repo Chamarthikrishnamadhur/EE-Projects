@@ -114,15 +114,16 @@ The matrix equation
 
 \item Sum of Independent Discrete Random Variables (Two Dice Roll)
 \begin{itemize}
-\item Let $X_1, X_2 \in \{1, 2, 3, 4, 5, 6\}$ be independent discrete uniform random variables representing the outcomes of two fair dice, each having probability mass function (PMF):
+\item Let $X_1, X_2 \in \{1, 2, 3, 4, 5, 6\}$ be independent discrete uniform random variables representing the outcomes of two fair dice, each having probability mass function (PMF)
 \begin{align}
 p_{X_1}\brak{n} = p_{X_2}\brak{n} = \begin{cases} 
 \frac{1}{6}, & 1 \le n \le 6 \\ 
 0, & \text{otherwise} 
-\end{cases} \label{eq:EE26BTECH11213-dice_uniform_pmf}
+\end{cases} 
+\label{eq:EE26BTECH11213-dice_uniform_pmf}
 \end{align}
 
-\item Let $X = X_1 + X_2$ denote their sum. The PMF of $X$ is given by the discrete convolution of $p_{X_1}\brak{n}$ and $p_{X_2}\brak{n}$:
+\item (Convolution) Let $X = X_1 + X_2$ denote their sum. The PMF of $X$ is given by the discrete convolution of $p_{X_1}\brak{n}$ and $p_{X_2}\brak{n}$:
 \begin{align}
 p_X\brak{n} &= \Pr\brak{X_1 + X_2 = n} = \sum_{k} \Pr\brak{X_1 = n - k \mid X_2 = k} p_{X_2}\brak{k} \\
 &= \sum_{k} p_{X_1}\brak{n - k} p_{X_2}\brak{k} = p_{X_1}\brak{n} * p_{X_2}\brak{n} \label{eq:EE26BTECH11213-dice_convolution}
@@ -242,7 +243,8 @@ When boundary parameters or specific yields fix certain degrees of freedom (such
 \item The Z-Transform
 %\item The bilateral Z-transform of a discrete-time sequence $x\sbrak{n}$ is defined as:
 \begin{align}
-X\brak{z} =  \sum_{n=-\infty}^{\infty} x\sbrak{n} z^{-n} \label{eq:EE26BTECH11213-z_transform_def}
+X\brak{z} =  \sum_{n=-\infty}^{\infty} x\sbrak{n} z^{-n} 
+\label{eq:EE26BTECH11213-z_transform_def}
 \end{align}
 over the Region of Convergence (ROC) where the series converges absolutely.
 %
@@ -256,13 +258,13 @@ u\brak{n} = \begin{cases}
 \end{align}
 and 
 \begin{align}
-	u\sbrak{n} \system{Z}= \sum_{n=0}^{\infty} z^{-n} = \frac{1}{1 - z^{-1}}, \quad \abs{z} > 1 \label{eq:EE26BTECH11213-z_step_transform}
+	u\sbrak{n} \system{Z} \sum_{n=0}^{\infty} z^{-n} = \frac{1}{1 - z^{-1}}, \quad \abs{z} > 1 \label{eq:EE26BTECH11213-z_step_transform}
 \end{align}
 %
 \item Time-Shift Property
 %Shifting a sequence by an integer delay $k$ corresponds to multiplication by $z^{-k}$ in the Z-domain:
 \begin{align}
-	x\sbrak{n - k} \system{Z} z^{-k} X\brak{z} 
+	x\brak{n - k} \system{Z} z^{-k} X\brak{z} 
 	\label{eq:EE26BTECH11213-z_shift_property}
 \end{align}
 %Consequently, delaying the discrete unit step by one sample yields:
@@ -271,9 +273,9 @@ and
 %\end{align}
 
 \item Standard Inverse Transform Pair:
-For any scalar constant $\alpha$:
+For any scalar constant $\alpha$,
 \begin{align}
-\alpha^n u\sbrak{n}\system{Z}\sbrak{\frac{1}{1 - \alpha z^{-1}}}, \quad \abs{z} > \abs{\alpha} \label{eq:EE26BTECH11213-z_inv_exponential}
+\alpha^n u\brak{n}\system{Z}\frac{1}{1 - \alpha z^{-1}}, \quad \abs{z} > \abs{\alpha} \label{eq:EE26BTECH11213-z_inv_exponential}
 \end{align}
 %
 \item (Trace of a Matrix)

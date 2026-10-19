@@ -1,14 +1,60 @@
 \begin{enumerate}[label=\thesubsection.\arabic*,ref=\thesubsection.\theenumi]
-\item
-Z transform:\label{eq:ztransform}\\
+	\item (Bernoulli Distribution)
+		For $X \in \cbrak{0,1}$, the pmf is defined as
+        \begin{align}
+            P_{X}(k)=
+                \begin{cases}
+                    p &  k=1 \\
+                    q & k=0\\
+		    0 & \text{otherwise}
+                \end{cases}
+        \end{align}
+\item The moment generating function 
 \begin{align}
-	M_{Y_1}\brak{Z}=E\brak{Z^{-Y_1}}=\sum\, P_{Y_1}\brak{k}\,Z^{-k}\label{eq:ztransformdef}
-\end{align}
-If y1,y2..yn are independent events:
+\begin{split}
+	M_{X}(z)\triangleq \mean{z^{-X}} &= p_{X}(1)z^{-1} +p_{X}(0)z^{0}\\
+    				&=pz^{-1}+q
+\end{split}
+\label{eq:EE26BTECH11213-mgf-def}
+        \end{align}
+	upon substituting from \eqref{eq:EE26BTECH11213-z_transform_def}.
+\item 
+(Binomial Distribution)	If $X_i$ are independent,  for
 \begin{align}
-M_Y\brak{Z}=M_{Y_1}\brak{Z}\,\, M_{Y_2}\brak{Z}\,.......\,M_{Y_n}\brak{Z}\label{eq:ztransformindep}
+\begin{split}
+%\label{eq:EE26BTECH11213-mgf-sum}
+	Y \triangleq \sum_{i=1}^{n}X_i, \quad 
+	M_{Y}(z)&=\prod_{i=1}^{n}M_{X_i}(z)        \\
+	&=\brak{pZ^{-1}+q}^n
+\end{split}
+\label{eq:EE26BTECH11213-mgf-prod}
 \end{align}
-
+\solution 
+From \eqref{eq:EE26BTECH11213-mgf-def},
+%and
+%\eqref{eq:EE26BTECH11213-mgf-sum}
+\begin{align}
+	M_{Y}(z)=\mean{z^{-\sum_{i=1}^{n}X_i}}
+	&=\mean{\prod_{i=1}^{n}z^{-X_{i}}}
+	\\
+	&=\prod_{i=1}^{n}\mean{z^{-X_{i}}}
+\end{align}
+yielding \eqref{eq:EE26BTECH11213-mgf-prod}.
+\item From  
+\eqref{eq:EE26BTECH11213-mgf-prod},
+\begin{align}
+	\brak{pz^{-1}+q}^n &= \comb{n}{k}p^kq^{n-k}z^{-k}
+	\\
+         \implies    p_Y\brak{k}&=
+	 \begin{cases}
+		 \comb{n}{k}p^kq^{n-k} & 0 \le k \le n \\
+		 0 & \text{otherwise}
+ \end{cases}
+\label{eq:EE26BTECH11213-pmf-bern}
+\end{align}
+%
+using the definition in \eqref{eq:EE26BTECH11213-mgf-def} along with
+\eqref{eq:EE26BTECH11213-z_transform_def}.
 \item
 Laplace transforms of some common functions:\label{eq:laplacecommon}
 

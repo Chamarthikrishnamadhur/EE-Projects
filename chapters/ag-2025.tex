@@ -1,6 +1,5 @@
 \begin{enumerate}[label=\thesubsection.\arabic*,ref=\thesubsection.\theenumi]
-
-
+%
  \item A fair six-faced dice, with the faces labelled ‘1’, ‘2’, ‘3’, ‘4’, ‘5’, and ‘6’, is rolled
     thrice. What is the probability of rolling ‘6’ exactly once?\hfill(GATE AG 2025)
 	\begin{multicols}{4}
@@ -12,67 +11,29 @@
 \end{enumerate}
 \end{multicols}
 \solution
-     The sample space is S $\in \{1,2,3,4,5,6\}$.
-     Let us define a variable $Y_1$ as follows: 
-     \begin{align}
-         Y_1=
-            \begin{cases}
-                1&X_1=6\\
-                0&X_1\neq6
-            \end{cases}
-     \end{align}
-     Now, The PMF is defined as:
+From \eqref{eq:EE26BTECH11213-dice_uniform_pmf},
         \begin{align}
-            P_{Y_1}(k)=
+            P_{X_1}(k)=
                 \begin{cases}
                     \frac{1}{6} &  k=1 \\
                     \frac{5}{6} & k=0\\
-                \end{cases}\\\\
-            \text{Let p,q be $\frac{1}{6}$ and $\frac{5}{6}$ respectively.}
+                \end{cases}
         \end{align}
-        
-    %\noindent Step 2: Applying Z-Transform to find the required PMF for Y \\\\
-    Let us define $Y_2$ and $X_3$ as the random variables for the 2\textsuperscript{nd} and 3\textsuperscript{rd} dice roll, respectively. Let $Y$ denote the random variable for the combined triple dice roll.We write
-\begin{align}
-        Y=Y_1+Y_2+Y_3
-\end{align}
-    Writing the Z-Transform (Refer to \eqref{eq:ztransform}) for $Y$
-\begin{align}
-	M_{Y_1}(Z)&=\brak{P_{Y_1}(1)Z^{-1} +P_{Y_1}(0)Z^{-0}}\\
-    				&=Z^{-1}+q
-        \end{align}
-    We know that $Y_1,Y_2,Y_3$ are independent events. From 
-\eqref{eq:ztransformindep}
+       where $X_i$ represents the $i$th roll. 
+Substituting $n=3,
+p=\frac{1}{6}, 
+q=\frac{5}{6}$,
+in \eqref{eq:EE26BTECH11213-pmf-bern},
+the desired probability is obtained as
     \begin{align}
-    M_Y\brak{Z}&=M_{Y_1}\brak{Z}\,\, M_{Y_2}\brak{Z}\,\,M_{Y_3}\brak{Z}\\
-        M_Y\brak{Z}&=\brak{pZ^{-1}+q}^3\\
-              &=\sum_{k=0}^3{^3}C_k\,\,q^{3-k}\,\, \brak{pZ^{-1}}^k\\    
-              &=\sum P_Y\brak{k}Z^{-k}\tag{Refer \eqref{eq:ztransformdef}}
-              \end{align}
-So, we can say:        
-        \begin{align}
-            P_Y\brak{k}&=^3C_k\,\,q^{3-k}\,\,p^k
+	    \comb{3}{1}\frac{1}{6}\brak{\frac{5}{6}}^2
+        =\frac{75}{216}.
     \end{align}
-    The above situation is called as a binomial distribution.
-    %\noindent Step 3: Using binomial distribution to get required probability
-    We need the situation where p appears exactly once. So, we consider only the term where the power of p is 1.
-    The required term is :  $^3C_1\,\,p\,\,q^2$.
-    Substituting the values of p and q, we get:
-    \begin{align}
-        ^3C_1\,\frac{1}{6}\,\,\brak{\frac{5}{6}}^2
-        =\frac{75}{216}
-    \end{align}
-    Therefore, the required answer is $\frac{75}{216}$.
-The following code simulates the result :
+The following code simulates the result 
 \begin{lstlisting}
 codes/Probability.c
 \end{lstlisting}
-
-
-
-
-
-
+%
 	\item If a, b, and c are the roots of $2x^3 - 3x^2 + px - 1=0$ and sum of the two roots is 1, the value of $p$ is:\hfill(GATE AG 2025)
 \begin{enumerate}
     \item 2

@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex main.idx"] 1788154310.49778 "main.idx" "main.ind" "main" 1792330334.07856 0
-  "main.idx" 1792330332.15404 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex main.idx"] 1788154310.49778 "main.idx" "main.ind" "main" 1792386267.66276 0
+  "main.idx" 1792386266.16748 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1792330328.03588 "main.tex" "main.pdf" "main" 1792330334.08107 0
+["pdflatex"] 1792386263.63277 "main.tex" "main.pdf" "main" 1792386267.66356 0
   "/data/data/com.termux/files/usr/share/texlive/2026.0/texmf-dist/web2c/texmf.cnf" 1789653563 43838 788b409ca7f6d70214933fbc221adf76 ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -63,6 +63,7 @@
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
+  "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1248133631 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
@@ -314,25 +315,25 @@
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/xpatch/xpatch.sty" 1585258158 8314 7803f78066c4f9d008405191a4b43073 ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1777904363 5573092 dde630300984a90ef415ac975d126ae6 ""
   "/data/data/com.termux/files/usr/share/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1777904360 3648643 fdf108452feb6e7eb41d3118e18221a0 ""
-  "EE26BTECH11202/chapters/ae-2026_formulae.tex" 1792329788.33004 23244 df25fd2332f08255d7e3b544083e697e ""
+  "EE26BTECH11202/chapters/ae-2026_formulae.tex" 1792382285.90539 23244 df25fd2332f08255d7e3b544083e697e ""
   "EE26BTECH11202/figs/Fourier.png" 1787130938.47618 38391 42589a3f9a7d302d95620b0c9308606e ""
   "EE26BTECH11202/figs/Spring.tex" 1789620820.52837 525 382212c24dd1e6d9eeecd85d7d0fd5f0 ""
   "EE26BTECH11202/figs/spring_deriv.tex" 1789620820.53637 533 1dadcc5192d3f0debe32cc14bd1ce0d0 ""
-  "EE26BTECH11213/chapters/bt-2025-formulae.tex" 1792311699.16829 13972 ce044ec6e037c01a1405b379a319e267 ""
+  "EE26BTECH11213/chapters/bt-2025-formulae.tex" 1792385790.31948 13976 42fa384cfcacd9e1d2fdde3f4d4f96bd ""
   "EE26BTECH11213/figs/pmf.pdf" 1789963435.73156 14801 9c395bd184699a448a18e853fa57091e ""
-  "chapters/ag-2025-formulae.tex" 1789618177.51389 6677 df3941c9fa92a67006d80dac165fde0c ""
-  "chapters/ag-2025.tex" 1792330321.76604 12461 e7c7ffeac2662e1eecec1b6e6945b466 ""
+  "chapters/ag-2025-formulae.tex" 1792386088.13148 7918 b3675a30a70e8f0257374a97fb11d6fe ""
+  "chapters/ag-2025.tex" 1792386257.38748 10865 b8c0a1740dccf2cf6c4571810badeb4a ""
   "figs/Euler.png" 1788931764.092 26077 7b3910267735ff0f6b523b60770c52c3 ""
   "figs/limitplot.png" 1788931764.112 28821 242e842ffadc7dcf34167b6dcc541f0e ""
   "figs/logo.jpg" 1788410424.0421 382648 cd8c4760ef18efd0782613502d16e226 ""
   "figs/rson.png" 1788931764.12 24844 eefe7c0c7c1d19a2432ec02053c20445 ""
   "gvv-book.sty" 1791362530.90641 2390 7e3aba23f6a80eaa09e6b6d2efe20895 ""
-  "gvv.sty" 1790762033.38777 4434 bde4aa22cab0cf1e9425c3111a94b6d2 ""
-  "main.aux" 1792330333.69804 12784 a4e034b324d781750f5c977e704d0146 "pdflatex"
+  "gvv.sty" 1792383874.85148 4434 bde4aa22cab0cf1e9425c3111a94b6d2 ""
+  "main.aux" 1792386267.42348 12826 c2efe0daa4552989fc8bf509df097915 "pdflatex"
   "main.ind" 1788410424.0781 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.out" 1792330333.70204 674 cfb93f537cba4af2aef5a87654bfeaf2 "pdflatex"
+  "main.out" 1792386267.42348 674 cfb93f537cba4af2aef5a87654bfeaf2 "pdflatex"
   "main.tex" 1792330243.77404 8665 4fb37b3f96652f0017cbf30a4005c73a ""
-  "main.toc" 1792330333.70604 498 44c8d7df333f1b547353d986b551100c "pdflatex"
+  "main.toc" 1792386267.42748 498 95d2f963eff41ea413945e80aa680579 "pdflatex"
   (generated)
   "main.aux"
   "main.idx"
