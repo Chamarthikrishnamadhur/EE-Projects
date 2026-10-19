@@ -313,12 +313,40 @@ Transferring the exponential term in \eqref{eq:EE26BTECH11202-Fourier-shift-time
 			\vec{1} = \myvec{1 \\ 1}
 			\label{eq:EE26BTECH11202-2D-one}
 		\end{align}
+\item Find the echelon form of the matrix
+	\begin{align}
+\vec{A} =  \myvec{
+1 & 4 & 2 \\
+2 & 8 & 4 \\
+3 & 12 & 6
+}
+\end{align}
+\solution
+Following row reduction, 
+\begin{align}
+\vec{A} \xrightarrow{R_2 \to R_2 - 2R_1} \myvec{
+1 & 4 & 2 \\
+0 & 0 & 0 \\
+3 & 12 & 6
+}
+\xrightarrow{R_3 \to R_3 - 3R_1} \myvec{
+1 & 4 & 2 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+}
+	\label{eq:EE26BTECH11202-echelon-def}
+\end{align}
+\item The rank of a matrix is defined to be the number of nonzero rows in echelon form.
+$\therefore \rank\brak{\vec{A}} = 1$.
+	\label{eq:EE26BTECH11202-rank-def}
+\item A matrix is said to be singular if its rank is nonzero.
+	\label{eq:EE26BTECH11202-singular-def}
 \item For
 	\begin{align}
 			\label{eq:EE26BTECH11202-rank-one}
-		\vec{A} = \vec{uv}^{\top}, \rank\brak{A} = 1.
+		\vec{A} = \vec{uv}^{\top}, \rank\brak{\vec{A}} = 1.
 \end{align}
-	 where both $u$ and $v$ are $n$-dimensional real-valued non-zero column vectors. 
+	 where both $\vec{u}$ and $\vec{v}$ are $n$-dimensional real-valued non-zero column vectors. 
 	 \\
 	 \solution 
 	 Let
@@ -335,20 +363,10 @@ Then
 3 & 12 & 6
 }
 \end{align}
-Following row reduction, 
-\begin{align}
-\vec{A} \xrightarrow{R_2 \to R_2 - 2R_1} \myvec{
-1 & 4 & 2 \\
-0 & 0 & 0 \\
-3 & 12 & 6
-}
-\xrightarrow{R_3 \to R_3 - 3R_1} \myvec{
-1 & 4 & 2 \\
-0 & 0 & 0 \\
-0 & 0 & 0
-}
-\end{align}
-yielding
+	From \eqref{eq:EE26BTECH11202-echelon-def}
+	and Definition
+	\ref{eq:EE26BTECH11202-rank-def},
+	we obtain
 			\eqref{eq:EE26BTECH11202-rank-one}.
 	\item 
 	\begin{align}
