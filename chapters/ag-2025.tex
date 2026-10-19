@@ -146,58 +146,49 @@ The following code verifies the result
 codes/echelon.py
 \end{lstlisting}
 %
-\item $\frac{s}{s^2+a^2}$ is the Laplace transform of:\hfill(AG 2025)
+\item $\frac{s}{s^2+a^2}$ is the Laplace transform of \hfill(AG 2025)
     \begin{enumerate}
+	\begin{multicols}{4}
     \item cos$\brak{at}$
     \item sin$\brak{at}$
     \item sinh$\brak{at}$
     \item cosh$\brak{at}$
-                
+%                
+    \end{multicols}
     \end{enumerate}
-
-    
+%%    
 \solution
-From \eqref{eq:laplacecommon}, 
+From \eqref{eq:EE26BTECH11202-Laplace_5}, 
 \begin{align}
 \cos\brak{at}\system{L}\frac{a}{s^2+a^2}
 \end{align}
-%no options
-
-
-
-
-
+%
 \item The median of the following set of numbers: 154, 130, 144, 137, 156, 146, 138,
 149, 160, 138 is:\hfill(AG 2025)
     \begin{enumerate}   
-    \item[(A)] $145.0$
-    \item[(B)] $145.2$
-    \item[(C)] $151.0$
-    \item[(D)] $146.0$
+	\begin{multicols}{4}
+    \item $145.0$
+    \item $145.2$
+    \item $151.0$
+    \item $146.0$
+    \end{multicols}
     %\item[SOL] NEED TO WRITE SOL!!!
     \end{enumerate}   
-
+%
 \solution
-To find the median, we need to arrange the data in ascending or descending order.
-After arranging them in ascending order, the data is as follows
-\begin{align}
-130,137,138,138,144,146,149,154,156,160
-\end{align}
-The number of elements in the data set are 10.
-Since it is an even number, the median ($M$) is defined as the average of the middle 2 terms (in this case, average of $5^{th}$ and $6^{th}$ terms).
-Therefore, the median($M$) is $\frac{144+146}{2} = 145.0$.
-The following codes verify the result:
+From the  
+following codes, the median is obtained as 
+145.0
 \begin{lstlisting}
 codes/Sorter.py
 codes/Quicksort.c
 \end{lstlisting}
-
-
-
-
-
-
-\item The series \\ $\sum_{n=0}^{r} q^n$ $=1+q+q^2+... ... ...$ has the sum:\hfill(AG 2025)
+\item The series 
+    \begin{align}
+\sum_{n=0}^{r} q^n =1+q+q^2+ \dots
+\end{align}
+ has the sum \hfill(AG 2025)
+	\begin{multicols}{4}
     \begin{enumerate}
     \item $\frac{1}{1-q}$-$\frac{q^{r+1}}{1-q}$
     \item $\frac{1}{q-1}$+$\frac{q^{r+1}}{q-1}$
@@ -205,72 +196,51 @@ codes/Quicksort.c
     \item $\frac{1}{q-1}$
     %\item[SOL] NEED TO WRITE SOL!!! 
     \end{enumerate}
-
+\end{multicols}
 \solution
-    The given sequence is a geometric progression with initial term as 1 and common ratio as $q$ and the number of terms are $r+1$.(The series converges only if $q<1$).
-    Applying formula \eqref{eq:sumofgp}, we get :
+	From \eqref{eq:sumofgp},
+    the desired sum is
     \begin{align}
-        1\,\frac{q^{r+1}-1}{q-1}\\
-        \frac{1-q^{r+1}}{1-q}\\
+        \frac{1-q^{r+1}}{1-q}=
         \frac{1}{1-q}-\frac{q^{r+1}}{1-q}        
     \end{align}
-Therefore, the answer is option A.
-The following code verifies the result:
+The following code verifies the result.
 \begin{lstlisting}
 codes/gp.py
 \end{lstlisting}
-  
-
-
-
-
-
 \item The value of $\lim_{x\to 0}\frac{x\cos\brak{x}-\sin\brak{x}}{x^2\sin\brak{x}}$\hfill(AG 2025)
+	\begin{multicols}{4}
     \begin{enumerate}
-        \item $\frac{-1}{3}$
+        \item $-\frac{1}{3}$
         \item $\frac{1}{3}$
         \item $3$
         \item$-3$
-        
 \end{enumerate}
-
-
-    
+\end{multicols}
         \solution
-        We use the idea of taylor series expansion (converges if $x<1$) to solve the problem.\\
-        
+%        We use the idea of taylor series expansion (converges if $x<1$) to solve the problem.\\
+        From  \eqref{eq:expansions},
        \begin{align}
-        &\frac{x\brak{\cos\brak{x}}-\sin\brak{x}}{x^2\sin\brak{x}}\\
-        &\frac{x(1-\frac{x^2}{2!} .....)-(x-\frac{x^3}{3!}.....)}{x^2(x-\frac{x^3}{3!}.....)}
-        \tag{Refer \eqref{eq:expansions}}
-        \end{align}
-        {When $x$ approaches zero, we can ignore the higher power terms.}\\
-        \begin{align}
-    		&\frac{(x-\frac{x^3}{2})-(x-\frac{x^3}{6})}{x^3(1-\frac{x^2}{6})}\\
-        &\frac{\frac{-1}{3}}{1-\frac{x^2}{6}}
+        \frac{x\brak{\cos\brak{x}}-\sin\brak{x}}{x^2\sin\brak{x}}
+        &=\frac{x(1-\frac{x^2}{2!} .....)-(x-\frac{x^3}{3!}.....)}{x^2(x-\frac{x^3}{3!}.....)}
+	\\
+    		&\approx \frac{(x-\frac{x^3}{2})-(x-\frac{x^3}{6})}{x^3(1-\frac{x^2}{6})}\\
+        &=-\frac{\frac{1}{3}}{1-\frac{x^2}{6}}
+	\\
+	\implies \lim_{x\to 0}\frac{x\cos\brak{x}-\sin\brak{x}}{x^2\sin\brak{x}}
+	&=-\frac{1}{3}.
        \end{align}
-       {Substituting $x$ as zero gives us the limit as $\frac{-1}{3}$.}
-        
-        
-
-The following code simulates the result:
+The following code generates
+    \figref{fig:limit}.
 \begin{lstlisting}
 codes/Plottinglimit.py
 \end{lstlisting}
-
- The output graph is shown below:\\
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{figs/limitplot.png}
-    \caption{The plot depicting the approaching of the limit to $\frac{-1}{3}$}
-    \label{Plot of the function approaching the limit}
+    \caption{}
+    \label{fig:limit}
 \end{figure}
-
-
-
-
-
-
 \item If $u=x^4+y^4+3x^2y^2$, the value of $\left(x\frac{\partial{u}}{\partial{x}}+y\frac{\partial{u}}{\partial{y}}\right)^{-1}$\hfill(AG 2025)
 \begin{enumerate}
     \item $4u$

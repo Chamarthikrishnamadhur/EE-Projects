@@ -56,80 +56,35 @@ yielding \eqref{eq:EE26BTECH11213-mgf-prod}.
 using the definition in \eqref{eq:EE26BTECH11213-mgf-def} along with
 \eqref{eq:EE26BTECH11213-z_transform_def}.
 \item
-Laplace transforms of some common functions:\label{eq:laplacecommon}
-
-\item
 \begin{align}
-\cos\brak{at}\system{L}\frac{s}{s^2+a^2}\label{eq:laplacecos}
+\begin{split}
+\sinh\brak{at}u(t)\system{L}\frac{a}{s^2-a^2}
+\\
+\cosh\brak{at}u(t)\system{L}\frac{s}{s^2-a^2}
+\end{split}
+\label{eq:laplaceh}
 \end{align}
-
-Proof:
+\solution
+From 
+\eqref{eq:EE26BTECH11202-Laplace_5},
 \begin{align}
-    \cos(at)&\system{L}\int_{0}^{\infty}\cos\brak{at}\,e^{-st}\,dt=I\\
-                          I&=\int_{0}^{\infty}\frac{d\brak{\sin\brak{at}}}{a}\,e^{-st}\\
-                           &=\frac{\sin\brak{at}}{a}\,e^{-st}\Bigg|_0^\infty-\frac{1}{a}\int_{0}^{\infty}\sin(at)e^{-st}\brak{-s}dt\\
-                           &=0+\frac{s}{a}\int_0^\infty \frac{d\brak{-\cos\brak{at}}}{a}\,e^{-st}\\
-                           &=-\brak{\frac{s}{a^2}}\left\{\cos\brak{at}\,e^{-st}\,\,\Bigg|_0^\infty-\int_0^\infty\cos\brak{at}\,e^{-st}\,\brak{-s}\right\}\\
-                           &=-\brak{\frac{s}{a^2}}\left\{\brak{0-1}-\brak{-s}I\right\}\\
-                           &=-\brak{\frac{s}{a^2}}\left\{-1+sI\right\}\\
-                          I&=\frac{s}{a^2}-\frac{s^2}{a^2}\brak{I}\\
-       \brak{\frac{a^2+s^2}{a^2}}I&=\frac{s}{a^2}\\
-                          I&=\frac{s}{s^2+a^2}
+	\cos(\j at) u(t)\system{L} \frac{s}{s^2 + \brak{\j a}^2} 
 \end{align}
-\item
+yielding
+\eqref{eq:laplaceh}.
+%
+\item (Geometric Progression)
 \begin{align}
-\sin\brak{at}&\system{L}\frac{a}{s^2+a^2}\label{eq:laplacesin}
-\end{align}
-Proof:
-\begin{align}
-    \sin\brak{at}&\system{L}\int_{0}^{\infty}\sin\brak{at}\,e^{-st}\,dt=I\\
-                          I&=\int_{0}^{\infty}\frac{d\brak{-\cos\brak{at}}}{a}\,e^{-st}\\
-                           &=\frac{-\cos\brak{at}}{a}\,e^{-st}\Bigg|_0^\infty-\frac{1}{a}\int_{0}^{\infty}-\cos(at)e^{-st}(-s)dt\\
-                           &=\frac{1}{a}-\frac{s}{a}\int_0^\infty \frac{d\brak{\sin\brak{at}}}{a}\,e^{-st}\\
-                           &=\frac{1}{a}-(\frac{s}{a^2})\left\{\sin(at)\,e^{-st}\,\,\Bigg|_0^\infty-\int_0^\infty\sin\brak{at}\,e^{-st}\,\brak{-s}\right\}\\
-                           &=-\brak{\frac{s}{a^2}}\left\{\brak{0-0}-\brak{-s}I\right\}\\
-                           &=-\brak{\frac{s}{a^2}}\left\{0+sI\right\}\\
-                          I&=\frac{a}{a^2}-\frac{s^2}{a^2}\brak{I}\\
-       \brak{\frac{a^2+s^2}{a^2}}I&=\frac{a}{a^2}\\
-                          I&=\frac{a}{s^2+a^2}
+	\sum_{i=0}^{n-1}q^i=\frac{q^n-1}{q-1}
+	\label{eq:sumofgp}
 \end{align}
 \item
 \begin{align}
-\sinh\brak{at}\system{L}\frac{a}{s^2-a^2}\label{eq:laplacesinh}
-\end{align}
-Proof:
-\begin{align}
-\sinh\brak{at}&\system{L}\int_0^\infty \frac{e^{at}-e^{-at}}{2}\,e^{-st} dt\\
-                            &=\frac{1}{2}\int_0^\infty e^{\brak{a-s}\brak{t}} dt -\frac{1}{2}\int_0^\infty e^{\brak{-a-s}\brak{t}}dt\\
-                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty-\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty\tag{assume s$>$a for integral to be finite}\\
-                            &=\frac{1}{2}\brak{\frac{1}{s-a}-\frac{1}{s+a}}\\
-                            &=\frac{1}{2}\brak{\frac{2a}{s^2-a^2}}\\
-                           I&=\frac{a}{s^2-a^2}
-\end{align}
-\item
-\begin{align}
-\cosh\brak{at}\system{L}\frac{s}{s^2-a^2}\label{eq:laplacecosh}
-\end{align}
-Proof:
-\begin{align}
-\cosh\brak{at}&\system{L}\int_0^\infty \frac{e^{at}+e^{-at}}{2}\,e^{-st} dt\\
-                            &=\frac{1}{2}\int_0^\infty e^{\brak{a-s}\brak{t}} dt +\frac{1}{2}\int_0^\infty e^{\brak{-a-s}\brak{t}}dt\\
-                            &=\frac{1}{2}\left\{\frac{e^{\brak{a-s}\brak{t}}}{a-s}\right\}\Bigg|_0^\infty+\frac{1}{2}\left\{\frac{e^{\brak{-a-s}\brak{t}}}{-a-s}\right\}\Bigg|_0^\infty\tag{assume s$>$a for integral to be finite}\\
-                            &=\frac{1}{2}\brak{\frac{1}{s-a}+\frac{1}{s+a}}\\
-                            &=\frac{1}{2}\brak{\frac{2s}{s^2-a^2}}\\
-                           I&=\frac{s}{s^2-a^2}
-\end{align}
-
-\item
-Sum of n terms of a gp\\
-\begin{align}
-	\sum_{i=1}^{n}q^i=q\frac{q^n-1}{q-1}\label{eq:sumofgp}
-\end{align}
-\item
-Expansions:\label{eq:expansions}\\
-\begin{align}
+\begin{split}
 	\sin\brak{x}=\sum_{i=1}^{n}-1^{i+1}\frac{x^{2i-1}}{\brak{2i-1}!}\\
 	\cos\brak{x}=\sum_{i=1}^{n}-1^{i+1}\frac{x^{i-1}}{{i-1}!}
+\end{split}
+\label{eq:expansions}
 \end{align}
 \item
 Euler's Theorem for homogeneous functions:\\
