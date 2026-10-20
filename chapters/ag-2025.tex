@@ -242,6 +242,7 @@ codes/Plottinglimit.py
     \label{fig:limit}
 \end{figure}
 \item If $u=x^4+y^4+3x^2y^2$, the value of $\left(x\frac{\partial{u}}{\partial{x}}+y\frac{\partial{u}}{\partial{y}}\right)^{-1}$\hfill(AG 2025)
+	\begin{multicols}{4}
 \begin{enumerate}
     \item $4u$
     \item $0$
@@ -249,84 +250,59 @@ codes/Plottinglimit.py
     \item $2u$
     %\item[SOL] NEED TO WRITE SOL!!! 
 \end{enumerate}
-
-
+\end{multicols}
 \solution
-We use Euler's theorem for homogeneous functions.(Refer to \eqref{eq:eulerhomo} for the theorem)
-%Step 1: Proving the given function is homogeneous:\medskip 
+Since
 \begin{align}
-    u=g\brak{x,y}&=x^4+y^4+3x^2y^2\\
-g\brak{\alpha x,\alpha y}&=\alpha^4\brak{x^4+y^4+3x^2y^2}  
+u\brak{\alpha x,\alpha y}=\alpha^4u\brak{\alpha x,\alpha y},
+\\
+    x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}=4u 
+    \\
+    \text{or, }
+    \brak{x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}}^{-1}=\frac{1}{4u} 
 \end{align}
-Therefore, u is a homogeneous function of degree 4.
-%Step 2: Using Euler's theorem to get the answer\medskip\\
-Since we know that the given equation is homogeneous and of degree 4, we can apply this theorem.
-\begin{align}\
-    x\frac{\partial u}{\partial x}+y\frac{\partial u}{\partial y}&=4u \tag{Refer equation \eqref{eq:eulerhomo}}
-\end{align}
-Since they asked for its reciprocal, the answer is $\frac{1}{4u}$
-
-
-
-
-
-
-
-\item The value of $y$ at $x=0.3$ and $y\brak{x=0}=0$ for the differential equation $\frac{dy}{dx}=3y+2e^x$ is \underline{\hspace{1cm}}. (Rounded off to 3 decimal places)\hfill(AG 2025)
-
+from \eqref{eq:eulerhomo}.
+\item  Given $y\brak{x=0}=0$ for the differential equation $\frac{dy}{dx}=3y+2e^x$, the value of $y$ at $x=0.3$ is \underline{\hspace{1cm}}. \hfill(AG 2025)
+%
+	\\
 \solution
-
-\begin{enumerate}
-\item
-Let us define a function G(s) such that:
-\begin{align}
-    y&\system{L}G\brak{s}\\
-    y'&\system{L}sG\brak{s} \tag{Refer \eqref{eq:laplace1d}}
-\end{align}
-Applying the laplace transform:
+	From 
+\eqref{eq:EE26BTECH11202-Laplace_1}
+and
+	\eqref{eq:EE26BTECH11202-Laplace-exp},
  \begin{align}
-     sG\brak{s}&=3G\brak{s}+2\mathcal{L}\{e^x\}\tag{From \eqref{eq:linearlaplace}}
- \end{align}
-
-Now, we evaluate G(s)
-\begin{align}
-    G\brak{s}\brak{s-3}&=\frac{2}{s-1}\\
-    G\brak{s}&=\frac{2}{\brak{s-1}\brak{s-3}}
-   \end{align}
-    \text{Using partial fractions:}
-\begin{align}
-    G\brak{s}&=\left(\frac{1}{s-3}-\frac{1}{s-1}\right)
+     sY\brak{s}&=3Y\brak{s}+2\frac{1}{s+1}
+     \\
+\implies     Y\brak{s}&=\frac{2}{\brak{s-1}\brak{s-3}}
+    \\
+    &=\frac{1}{s-3}-\frac{1}{s-1}
+    \\
+    \text{or, }
+	y(x)&=\brak{e^{3x}-e^{x} }u(x)
 \end{align}
-Finding y using inverse laplace transform:
+by considering the inverse.
 \begin{align}
-   y&\system{L}G\brak{s}
-  \end{align}
-From \eqref{eq:linearinverselaplace} and \eqref{eq:laplacee^ax},we can write:
-\begin{align}
-                 y&=e^{3x}-e^{x} 
+	\therefore
+    y\brak{0.3}=1.110
 \end{align}
-finding y based on initial conditions:
+	From \eqref{eq:EE26BTECH11202-ED_1},
 \begin{align}
-    x&=0.3\tag{given}\\
-    y&=e^{3\times0.3}-e^{0.3}\\
-    y&=1.110
+y_{n+1}=y_{n}+h(3y_n+2e^n).
+    \label{eq:Forwardeuler}
 \end{align}
-\item
-Using forward euler method (see \eqref{eq:fwdeuler})to find the graph.The difference function of forward euler becomes:
-\begin{align}
-y_{n+1}=y_{n}+h(3y_n+2e^x)
-\end{align}
-Using it, the following graph is obtained: 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{figs/Euler.png}
-    \caption{The plot depicting the divergence of forward euler from original at large values}
-    \label{Forwardeuler}
-\end{figure}
-\end{enumerate}
-The following code simulates the result:
+The following code computes 
+    \eqref{eq:Forwardeuler}
+    and generates
+    \figref{fig:Forwardeuler}.
+simulates the result:
 \begin{lstlisting}
 codes/diffeq.py
 \end{lstlisting}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/Euler.png}
+    \caption{The plot depicting the divergence of forward euler from theory at large values}
+    \label{fig:Forwardeuler}
+\end{figure}
 \end{enumerate}
 %\end{document}

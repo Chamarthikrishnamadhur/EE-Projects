@@ -47,11 +47,6 @@ g^{\prime}\brak{t} \system{L}s G\brak{s}-g\brak{0}
 \label{eq:EE26BTECH11202-Laplace_1}
 \end{align}
 \solution 
-\iffalse
-\begin{align}
-g^{\prime}\brak{t} \system{L} \int_{0}^{\infty} e^{-st} g^{\prime}\brak{t} \, dt
-\end{align}
-\fi
 Applying integration by parts, 
 \begin{align}
 	u &= e^{-st}, dv = g^{\prime}\brak{t} \, dt 
@@ -68,7 +63,8 @@ g^{\prime \prime}\brak{t} \system{L} s^2 G\brak{s} -sg\brak{0}-g^{\prime}\brak{0
 \end{align}
 \item 
 \begin{align}
-	e^{at} g\brak{t} \system{L} G\brak{s-a} \label{eq:EE26BTECH11202-Laplace_3}
+	e^{at} g\brak{t} \system{L} G\brak{s-a} 
+	\label{eq:EE26BTECH11202-Laplace_3}
 \end{align}
 \solution
 \begin{align}
@@ -107,6 +103,15 @@ yielding
 \eqref{eq:EE26BTECH11202-Laplace_4.1-step}
 with respect to $s$ results in 
 \eqref{eq:EE26BTECH11202-Laplace_4}.
+\item 
+\begin{align}
+	e^{-at} u\brak{t} \system{L} \frac{1}{s+a}, \quad \Re\brak{s} > \Re\brak{a}.
+	\label{eq:EE26BTECH11202-Laplace-exp}
+\end{align}
+\solution  See 
+	\eqref{eq:EE26BTECH11202-Laplace_4.1}
+	and
+	\eqref{eq:EE26BTECH11202-Laplace_3}.
 \item 
 \begin{align}
 \begin{split}
