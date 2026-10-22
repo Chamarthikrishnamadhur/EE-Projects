@@ -96,6 +96,21 @@ $f(x,y)$ is homogeneous of degree $n$.  Then,
     x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial y}&=nf
     \label{eq:eulerhomo}
 \end{align}
+\item (fourth order Runge Kutta method)
+	Let a function be defined as follows:\\
+	$\frac{dy}{dx}=f\brak{x,y}$ , $y\brak{x_0}=y_0.$\\
+	the difference equation is given by 
+	\begin{align}
+		y_{n+1}&=y_n+\frac{h}{6}\brak{k_1+2k_2+2k_3+k_4}\label{eq-rk4}\\
+		x_{n+1}&=x_n+h
+	\end{align}
+	We find $k_1,k_2,k_3,k_4$ by the following formulae:
+	\begin{align}
+		k_1&=f\brak{x_n,y_n}\\
+		k_2&=f\brak{x_n+\frac{h}{2},y_n+k_1\frac{h}{2}}\\
+		k_3&=f\brak{x_n=\frac{h}{2},y_n+k_2\frac{h}{2}}\\
+		k_4&=f\brak{x_n+h,y_n+hk_3}
+	\end{align}	 
 \end{enumerate}
 
 

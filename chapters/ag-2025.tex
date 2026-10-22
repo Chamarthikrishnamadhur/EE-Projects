@@ -278,7 +278,7 @@ and
     &=\frac{1}{s-3}-\frac{1}{s-1}
     \\
     \text{or, }
-	y(x)&=\brak{e^{3x}-e^{x} }u(x)
+	y(x)&=\brak{e^{3x}-e^{x} }u(x)\label{eq:diffeq}
 \end{align}
 by considering the inverse.
 \begin{align}
@@ -296,13 +296,41 @@ The following code computes
     \figref{fig:Forwardeuler}.
 simulates the result:
 \begin{lstlisting}
-codes/diffeq.py
+codes/foreul.py
 \end{lstlisting}
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{figs/Euler.png}
     \caption{The plot depicting the divergence of forward euler from theory at large values}
     \label{fig:Forwardeuler}
+   
+\end{figure}		
+\item  Given $y\brak{x=0}=0$ for the differential equation $\frac{dy}{dx}=3y+2e^x$, the value of $y$ at $x=0.3$ is \underline{\hspace{1cm}}. \hfill(AG 2025)
+\\
+\solution Solving with Runge Kutta method\\
+	let $h=0.1$ and $y(0)=0$ be the initial conditions.
+	From \eqref{eq-rk4},upon repeating 3 times, we get:
+	\begin{align}
+		y\brak{0.3}=1.10964
+	\end{align}	 
+	whereas the actual solution from the integrated equation \eqref{eq:diffeq} is:
+	\begin{align}
+		y\brak{0.3}=1.10974 
+	\end{align}
+Comparing Runge Kutta with forward euler:\\ 
+	From \eqref{eq:EE26BTECH11202-ED_1},The forward euler value for the same step size is:
+	\begin{align}
+		y\brak{0.3}=0.86963
+	\end{align}
+	The following code plots the graphs of the original \eqref{eq:diffeq} , Runge Kutta \eqref{eq-rk4} and forward euler \eqref{eq:EE26BTECH11202-ED_1} values:
+	\begin{lstlisting}
+		codes/rkcompare.py
+	\end{lstlisting}
+	The generated figure shows the accuracies of the above two methods of approximation:
+\begin{figure}[htbp]
+	\includegraphics[width=1.0\textwidth]{figs/rkcompare.png}
+	\caption{Comparision of accuracies of the two methods}
+	\label{fig:rkcompare}
 \end{figure}
 \end{enumerate}
 %\end{document}
